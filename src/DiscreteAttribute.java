@@ -1,8 +1,4 @@
-package mapes1;
-
-import mapes1.Attribute;
-
-class DiscreteAttribute extends Attribute {
+public class DiscreteAttribute extends Attribute {
     private String[] values;
 
     public DiscreteAttribute(String name, int index, String[] values) {

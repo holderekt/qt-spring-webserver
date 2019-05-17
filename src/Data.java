@@ -1,6 +1,4 @@
-package mapes1;
-
-class Data {
+public class Data {
     private Object data[][];
     private int numberOfExamples;
     private Attribute attributeSet[];
@@ -23,6 +21,7 @@ class Data {
         numberOfExamples = 2;
     }
 
+
     public int getNumberOfExplanatoryAttributes() {
         return numberOfExamples;
     }
@@ -31,7 +30,7 @@ class Data {
         return attributeSet;
     }
 
-    Object getValues(int exampleIndex, int attributeIndex) {
+    Object getValue(int exampleIndex, int attributeIndex) {
         return data[exampleIndex][attributeIndex];
     }
 
@@ -52,6 +51,14 @@ class Data {
         }
 
         return result;
+    }
+
+    public Tuple getItemSet(int index){
+        Tuple tuple = new Tuple(attributeSet.length);
+        for(int i = 0; i!= attributeSet.length; i++){
+            tuple.add(new DiscreteItem((DiscreteAttribute)attributeSet[i], (String)data[index][i]), i);
+        }
+        return tuple;
     }
 
     public static void main(String[] args){

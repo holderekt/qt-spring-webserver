@@ -1,8 +1,4 @@
-package mapes1;
-
-import java.io.*;
-
-class Attribute {
+public class Attribute {
     private String name;
     private int index;
 
