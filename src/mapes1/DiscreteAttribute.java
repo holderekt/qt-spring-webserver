@@ -1,3 +1,6 @@
+package mapes1;
+
+import mapes1.Attribute;
 
 class DiscreteAttribute extends Attribute {
     private String[] values;
