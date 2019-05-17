@@ -1,3 +1,5 @@
+package mapes1;
+
 import java.io.*;
 
 class Attribute {

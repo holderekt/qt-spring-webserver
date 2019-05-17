@@ -1,3 +1,5 @@
+package mapes1;
+
 class Data {
     private Object data[][];
     private int numberOfExamples;
