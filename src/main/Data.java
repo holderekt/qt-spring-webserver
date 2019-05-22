@@ -135,14 +135,14 @@ public class Data {
         String result = "";
 
         for (Attribute at : attributeSet) {
-            result += at.getName() + ",";
+            result += at.getName() + ", ";
         }
         result += "\n";
 
         for (int i = 0; i != getNumberOfExplanatoryAttributes(); i++) {
             result += i + ".";
             for (int j = 0; j != attributeSet.length; j++) {
-                result += (String)data[i][j] + ",";
+                result += (String)data[i][j] + ", ";
             }
             result += "\n";
         }

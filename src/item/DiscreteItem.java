@@ -1,7 +1,6 @@
 package item;
 
 import attribute.DiscreteAttribute;
-import item.Item;
 
 public class DiscreteItem extends Item {
     public DiscreteItem(DiscreteAttribute attribute, String value){

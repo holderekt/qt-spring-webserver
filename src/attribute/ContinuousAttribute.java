@@ -1,7 +1,5 @@
 package attribute;
 
-import attribute.Attribute;
-
 public class ContinuousAttribute extends Attribute {
     private double max;
     private double min;
@@ -12,7 +10,7 @@ public class ContinuousAttribute extends Attribute {
         this.min = min;
     }
 
-    double getScaledValue(double v){
+    public double getScaledValue(double v){
         return ((v-min)/(max-min));
     }
 }
