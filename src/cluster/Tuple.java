@@ -1,3 +1,7 @@
+package cluster;
+import main.*;
+import item.Item;
+
 public class Tuple {
     private Item[] tuple;
 
@@ -18,6 +22,7 @@ public class Tuple {
     }
 
     public double getDistance(Tuple obj){
+
         double totalDistance = 0;
         int maxPosition;
 
@@ -34,9 +39,17 @@ public class Tuple {
         return totalDistance;
     }
 
-    public double avgDistance(Data data, int clusteredData[]){
-        double avgDistacnce = 0;
-        return avgDistacnce;
+    public double avgDistance(Data data, int[] clusteredData){
+        double p = 0.0, sumD = 0.0;
+
+        for(int i=0; i<clusteredData.length; i++){
+            double d = getDistance(data.getItemSet(clusteredData[i]));
+            sumD += d;
+        }
+
+        p = sumD / clusteredData.length;
+
+        return p;
     }
 
     public String toString(){

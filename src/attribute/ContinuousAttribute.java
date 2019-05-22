@@ -1,3 +1,7 @@
+package attribute;
+
+import attribute.Attribute;
+
 public class ContinuousAttribute extends Attribute {
     private double max;
     private double min;

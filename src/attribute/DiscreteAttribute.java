@@ -1,3 +1,7 @@
+package attribute;
+
+import attribute.Attribute;
+
 public class DiscreteAttribute extends Attribute {
     private String[] values;
 

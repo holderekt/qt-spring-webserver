@@ -1,7 +1,9 @@
+package cluster;
+
 import java.util.Arrays;
 
 
-class ArraySet {
+public class ArraySet {
 	private boolean set[];
 	private int size=0;
 	

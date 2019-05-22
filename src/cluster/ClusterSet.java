@@ -1,7 +1,10 @@
+package cluster;
+import main.*;
+
 public class ClusterSet {
     private Cluster C[] = new Cluster[0];
 
-    ClusterSet(){}
+    public ClusterSet(){}
 
     public void add(Cluster c){
         Cluster tempC[] = new Cluster[C.length + 1];
@@ -37,5 +40,7 @@ public class ClusterSet {
 
         return str;
     }
+
+
 
 }

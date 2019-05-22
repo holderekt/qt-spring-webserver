@@ -1,3 +1,7 @@
+package item;
+
+import attribute.Attribute;
+
 public abstract class Item {
     private Attribute attribute;
     private Object value;
@@ -19,5 +23,5 @@ public abstract class Item {
         return (String)value;
     }
 
-    abstract double distance(Object a);
+    public abstract double distance(Object a);
 }

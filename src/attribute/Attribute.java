@@ -1,3 +1,5 @@
+package attribute;
+
 public class Attribute {
     private String name;
     private int index;
