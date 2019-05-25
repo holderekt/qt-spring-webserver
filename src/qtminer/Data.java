@@ -1,4 +1,4 @@
-package main;
+package qtminer;
 
 import attribute.Attribute;
 import attribute.DiscreteAttribute;
@@ -10,7 +10,7 @@ public class Data {
     private int numberOfExamples;
     private Attribute[] attributeSet;
 
-    Data() {
+    public Data() {
         data = new Object[14][5];
         attributeSet = new Attribute[5];
 
@@ -157,10 +157,4 @@ public class Data {
         }
         return tuple;
     }
-
-    public static void main(String[] args){
-        Data a = new Data();
-        System.out.println(a);
-    }
-
 }

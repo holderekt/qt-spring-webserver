@@ -1,6 +1,7 @@
 package cluster;
-import main.*;
+
 import item.Item;
+import qtminer.Data;
 
 public class Tuple {
     private Item[] tuple;

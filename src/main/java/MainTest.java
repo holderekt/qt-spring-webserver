@@ -1,5 +1,6 @@
-package main;
-
+package main.java;
+import qtminer.Data;
+import qtminer.QTMiner;
 import java.io.IOException;
 
 public class MainTest {

@@ -1,5 +1,5 @@
 package cluster;
-import main.*;
+import qtminer.Data;
 
 public class Cluster {
 	private Tuple centroid;
