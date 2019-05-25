@@ -17,7 +17,7 @@ public class Cluster {
 	}
 	
 
-	boolean addData(int id){
+	public boolean addData(int id){
 		return clusteredData.add(id);
 		
 	}
@@ -56,11 +56,13 @@ public class Cluster {
 		String str="Centroid=(";
 		for(int i=0;i<centroid.getLength();i++)
 			str+=centroid.get(i)+ " ";
+
 		str+=")\nExamples:\n";
-		int array[]=clusteredData.toArray();
+		int array[]= iterator();
+
 		for(int i=0;i<array.length;i++){
 			str+="[";
-			for(int j=0;j<data.getNumberOfExplanatoryAttributes();j++)
+			for(int j=0;j<data.getSchema().length;j++)
 				str+=data.getValue(array[i], j)+" ";
 			str+="] dist="+getCentroid().getDistance(data.getItemSet(array[i]))+"\n";
 			

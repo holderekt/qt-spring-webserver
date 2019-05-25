@@ -3,6 +3,7 @@ import main.*;
 
 public class ClusterSet {
     private Cluster C[] = new Cluster[0];
+    private int len = 0;
 
     public ClusterSet(){}
 
@@ -14,6 +15,11 @@ public class ClusterSet {
 
         tempC[C.length] = c;
         C = tempC;
+        len++;
+    }
+
+    public int length(){
+        return len;
     }
 
     public Cluster get(int i){

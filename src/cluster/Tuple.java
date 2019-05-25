@@ -23,20 +23,12 @@ public class Tuple {
 
     public double getDistance(Tuple obj){
 
-        double totalDistance = 0;
-        int maxPosition;
-
-        if(this.getLength() <= obj.getLength()){
-            maxPosition = this.getLength();
-        }else{
-            maxPosition = obj.getLength();
+        double total = 0;
+        for(int i = 0; i!= tuple.length; i++){
+            total += this.get(i).distance(obj.get(i));
         }
 
-        for(int i = 0; i!= maxPosition; i++){
-            totalDistance += this.get(i).distance(obj.get(i));
-        }
-
-        return totalDistance;
+        return total;
     }
 
     public double avgDistance(Data data, int[] clusteredData){

@@ -8,6 +8,6 @@ public class DiscreteItem extends Item {
     }
 
     public double distance(Object a){
-        return (getValue().equals(a) ? 0 : 1);
+        return (getValue().equals(a.toString()) ? 0 : 1);
     }
 }
