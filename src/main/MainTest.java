@@ -7,7 +7,7 @@ public class MainTest {
 	 */
 	public static void main(String[] args) {
 		
-		
+		System.out.println("Test");
 		Data data =new Data();
 		System.out.println(data);
 		double radius =2.0;
