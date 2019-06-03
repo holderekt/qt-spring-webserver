@@ -3,6 +3,7 @@ package mining;
 import data.Data;
 
 import java.io.IOException;
+import java.util.EmptyStackException;
 
 public class QTMiner {
 
@@ -19,8 +20,13 @@ public class QTMiner {
     }
 
     //TODO Completare implementazione
-    public int compute(Data data) throws IOException{
+    public int compute(Data data) throws IOException, ClusteringRadiusException, EmptyDatasetException {
         int numclusters = 0;
+
+        if(!(data.getNumberOfExplanatoryAttributes() > 0 && data.getSchema().length > 0)){
+            throw new EmptyDatasetException();
+        }
+
         boolean[] isClustered = new boolean[data.getNumberOfExplanatoryAttributes()];
 
         for(int i=0; i<isClustered.length; i++){
@@ -43,7 +49,9 @@ public class QTMiner {
             countClustered += c.getSize();
         }
 
-
+        if(numclusters <= 1){
+            throw new ClusteringRadiusException();
+        }
 
         return numclusters;
     }
