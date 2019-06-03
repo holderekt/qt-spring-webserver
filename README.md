@@ -1,5 +1,5 @@
 
-# map-lab [![Build Status](https://travis-ci.com/holderekt/map-lab.svg?token=zYihrEzEodBtdzXuoqNx&branch=master)](https://travis-ci.com/holderekt/map-lab) ![alt text](https://img.shields.io/badge/advancement-43%25-blue.svg)
+# map-lab [![Build Status](https://travis-ci.com/holderekt/map-lab.svg?token=zYihrEzEodBtdzXuoqNx&branch=master)](https://travis-ci.com/holderekt/map-lab) ![alt text](https://img.shields.io/badge/advancement-57%25-blue.svg)
 Caso di studio del corso "Metodi Avanzati di Programmazione"
  
 
@@ -7,7 +7,7 @@ Caso di studio del corso "Metodi Avanzati di Programmazione"
 - [x] Esercitazione 1
 - [x] Esercitazione 2
 - [x] Esercitazione 3
-- [ ] Esercitazione 4
+- [x] Esercitazione 4
 - [ ] Esercitazione 5
 - [ ] Esercitazione 6
 - [ ] Esercitazione 7
