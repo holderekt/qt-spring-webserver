@@ -1,13 +1,23 @@
 package data;
 
+import java.util.LinkedList;
+import java.util.List;
+
 public class Data {
     private Object[][] data;
     private int numberOfExamples;
-    private Attribute[] attributeSet;
+    private List<Attribute> attributeSet = new LinkedList<>();
 
     public Data() {
         data = new Object[14][5];
-        attributeSet = new Attribute[5];
+
+
+
+        data[3][0] = "Rain";
+        data[3][1] = "Mild";
+        data[3][2] = "High";
+        data[3][3] = "Weak";
+        data[3][4] = "Yes";
 
         data[0][0] = "Sunny";
         data[0][1] = "Hot";
@@ -27,11 +37,7 @@ public class Data {
         data[2][3] = "Weak";
         data[2][4] = "Yes";
 
-        data[3][0] = "Rain";
-        data[3][1] = "Mild";
-        data[3][2] = "High";
-        data[3][3] = "Weak";
-        data[3][4] = "Yes";
+
 
         data[4][0] = "Rain";
         data[4][1] = "Cool";
@@ -96,19 +102,19 @@ public class Data {
 
 
         String[] outlookValues = { "Sunny, Overcast, Rain" };
-        attributeSet[0] = new DiscreteAttribute("Outlook", 0, outlookValues);
+        attributeSet.add(new DiscreteAttribute("Outlook", 0, outlookValues));
 
         String[] temperatureValues = { "Hot, Mild, Cold" };
-        attributeSet[1] = new DiscreteAttribute("Temperature", 1, temperatureValues);
+        attributeSet.add(new DiscreteAttribute("Temperature", 1, temperatureValues));
 
         String[] humidityValues = {"High", "Normal"};
-        attributeSet[2] = new DiscreteAttribute("Humidity", 2, humidityValues);
+        attributeSet.add(new DiscreteAttribute("Humidity", 2, humidityValues));
 
         String[] windValues = {"Weak", "Strong"};
-        attributeSet[3] = new DiscreteAttribute("Wind", 3, windValues);
+        attributeSet.add(new DiscreteAttribute("Wind", 3, windValues));
 
         String[] tennisValues = {"Yes", "No"};
-        attributeSet[4] = new DiscreteAttribute("PlayTennis", 4, tennisValues);
+        attributeSet.add(new DiscreteAttribute("PlayTennis", 4, tennisValues));
 
         numberOfExamples = 14;
     }
@@ -118,7 +124,7 @@ public class Data {
         return numberOfExamples;
     }
 
-    public Attribute[] getSchema() {
+    public List<Attribute> getSchema() {
         return attributeSet;
     }
 
@@ -136,7 +142,7 @@ public class Data {
 
         for (int i = 0; i != getNumberOfExplanatoryAttributes(); i++) {
             result += i + ".";
-            for (int j = 0; j != attributeSet.length; j++) {
+            for (int j = 0; j != attributeSet.size(); j++) {
                 result += (String)data[i][j] + ", ";
             }
             result += "\n";
@@ -146,9 +152,9 @@ public class Data {
     }
 
     public Tuple getItemSet(int index){
-        Tuple tuple = new Tuple(attributeSet.length);
-        for(int i = 0; i!= attributeSet.length; i++){
-            tuple.add(new DiscreteItem((DiscreteAttribute)attributeSet[i], (String)data[index][i]), i);
+        Tuple tuple = new Tuple(attributeSet.size());
+        for(int i = 0; i!= attributeSet.size(); i++){
+            tuple.add(new DiscreteItem((DiscreteAttribute)attributeSet.get(i), (String)data[index][i]), i);
         }
         return tuple;
     }

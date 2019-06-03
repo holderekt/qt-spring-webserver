@@ -4,6 +4,7 @@ import data.Data;
 
 import java.io.IOException;
 import java.util.EmptyStackException;
+import java.util.Iterator;
 
 public class QTMiner {
 
@@ -23,7 +24,7 @@ public class QTMiner {
     public int compute(Data data) throws IOException, ClusteringRadiusException, EmptyDatasetException {
         int numclusters = 0;
 
-        if(!(data.getNumberOfExplanatoryAttributes() > 0 && data.getSchema().length > 0)){
+        if(!(data.getNumberOfExplanatoryAttributes() > 0 && data.getSchema().size() > 0)){
             throw new EmptyDatasetException();
         }
 
@@ -40,10 +41,10 @@ public class QTMiner {
             C.add(c);
             numclusters++;
 
-            int[] clusteredTupleId = c.iterator();
+            Iterator<Integer> clusteredTupleId = c.iterator();
 
-            for(int i=0; i < clusteredTupleId.length; i++){
-                isClustered[clusteredTupleId[i]] = true;
+            while(clusteredTupleId.hasNext()){
+                isClustered[clusteredTupleId.next()] = true;
             }
 
             countClustered += c.getSize();
@@ -64,11 +65,12 @@ public class QTMiner {
             if(!isClustered[i]){
                 // Aggiungo un cluster con centroide su i
                 Cluster clu = new Cluster(data.getItemSet(i));
+                //System.out.println("-------");
                 //System.out.println("Centroid " + clu.getCentroid());
 
                 for(int j = 0; j!= data.getNumberOfExplanatoryAttributes(); j++){
                     if(!isClustered[j]){
-                       // System.out.println("Tuple" + data.getItemSet(j));
+                       //System.out.println("Tuple" + data.getItemSet(j) + " " + clu.getCentroid().getDistance(data.getItemSet(j)));
 
                         if(clu.getCentroid().getDistance(data.getItemSet(j)) <= radius){
 
@@ -77,37 +79,48 @@ public class QTMiner {
                     }
                 }
 
-                /*
-                for(int a : clu.iterator()){
-                    System.out.print(a + " ");
-                }
-                System.in.read();
+                //Iterator<Integer> cc = clu.iterator();
+                //while(cc.hasNext()){
+                  //  System.out.print(cc.next() + " ");
+                //}
+                //System.in.read();
 
-                System.out.println(clu.toString(data));
-                final int read = System.in.read();
-                */
+                //System.out.println(clu.toString(data));
+                //final int read = System.in.read();
+
+                //System.out.println("\n\n");
+                //System.out.println(clu.toString(data));
+                //System.in.read();
                 temp.add(clu);
 
             }
         }
 
+        // RICERCA MAX
+
+        Iterator<Cluster> iterclu = temp.iterator();
+
+        Cluster max = temp.iterator().next();
+
+        while(iterclu.hasNext()){
+            Cluster next = iterclu.next();
 
 
-        Cluster max = temp.get(0);
-        for(int i = 1; i<temp.length(); i++){
-                System.out.println(temp.get(i) + " " + temp.get(i).iterator().length);
-                System.out.println(max + " " + max.iterator().length);
-                if(temp.get(i).iterator().length > max.iterator().length){
-                    max = temp.get(i);
-                }
-
+            if(next.getSize() >= max.getSize()){
+                max = next;
+            }
         }
 
+        System.in.read();
 
+        Iterator<Integer> iter = max.iterator();
 
-        for(int i = 0; i<max.iterator().length; i++){
-            isClustered[max.iterator()[i]] = true;
+        while(iter.hasNext()){
+            isClustered[iter.next()] = true;
         }
+
+        System.out.println(max);
+        System.in.read();
 
         return max;
     }

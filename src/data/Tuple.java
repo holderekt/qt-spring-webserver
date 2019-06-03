@@ -1,5 +1,8 @@
 package data;
 
+import java.util.Iterator;
+import java.util.Set;
+
 public class Tuple {
     private Item[] tuple;
 
@@ -29,16 +32,16 @@ public class Tuple {
         return total;
     }
 
-    public double avgDistance(Data data, int[] clusteredData){
+    public double avgDistance(Data data, Set<Integer> clusteredData){
         double p = 0.0, sumD = 0.0;
 
-        for(int i=0; i<clusteredData.length; i++){
-            double d = getDistance(data.getItemSet(clusteredData[i]));
+        Iterator<Integer> elem = clusteredData.iterator();
+        while(elem.hasNext()){
+            double d = getDistance(data.getItemSet((Integer)elem.next()));
             sumD += d;
         }
 
-        p = sumD / clusteredData.length;
-
+        p = sumD / clusteredData.size();
         return p;
     }
 

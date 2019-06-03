@@ -1,17 +1,20 @@
 package mining;
-import cluster.ArraySet;
+
 import data.Data;
 import data.Tuple;
 
-public class Cluster {
+import java.util.HashSet;
+import java.util.Iterator;
+import java.util.Set;
+import java.util.function.Consumer;
+
+public class Cluster implements Iterable<Integer>, Comparable<Cluster>{
 	private Tuple centroid;
 
-	private ArraySet clusteredData;
+	private Set<Integer> clusteredData = new HashSet<Integer>();
 
 	public Cluster(Tuple centroid){
 		this.centroid=centroid;
-		clusteredData=new ArraySet();
-		
 	}
 		
 	public Tuple getCentroid(){
@@ -26,13 +29,13 @@ public class Cluster {
 	
 
 	public boolean contain(int id){
-		return clusteredData.get(id);
+		return clusteredData.contains(id);
 	}
 	
 
 
 	public void removeTuple(int id){
-		clusteredData.delete(id);
+		clusteredData.remove(id);
 		
 	}
 	
@@ -41,10 +44,11 @@ public class Cluster {
 	}
 	
 	
-	public int[] iterator(){
-		return clusteredData.toArray();
+	public Iterator<Integer> iterator(){
+		return clusteredData.iterator();
 	}
-	
+
+
 	public String toString(){
 		String str="Centroid=(";
 		for(int i=0;i<centroid.getLength();i++)
@@ -60,18 +64,23 @@ public class Cluster {
 			str+=centroid.get(i)+ " ";
 
 		str+=")\nExamples:\n";
-		int array[]= iterator();
+		Iterator<Integer>  array = clusteredData.iterator();
 
-		for(int i=0;i<array.length;i++){
+		while(array.hasNext()){
+
+			int next = array.next();
 			str+="[";
-			for(int j=0;j<data.getSchema().length;j++)
-				str+=data.getValue(array[i], j)+" ";
-			str+="] dist="+getCentroid().getDistance(data.getItemSet(array[i]))+"\n";
-			
+			for(int j=0;j<data.getSchema().size();j++)
+				str+=data.getValue(next, j)+" ";
+			str+="] dist="+getCentroid().getDistance(data.getItemSet(next))+"\n";
 		}
-		str+="\nAvgDistance="+getCentroid().avgDistance(data, array);
+
+		str+="\nAvgDistance="+getCentroid().avgDistance(data, clusteredData);
 		return str;
-		
 	}
 
+	@Override
+	public int compareTo(Cluster integers) {
+		return (this.getSize() > integers.getSize() ? 1 : -1);
+	}
 }
