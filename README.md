@@ -10,3 +10,8 @@ Caso di studio del corso "Metodi Avanzati di Programmazione"
 - [ ] Esercitazione 4
 - [ ] Esercitazione 5
 - [ ] Esercitazione 6
+
+
+
+
+fhfjhf

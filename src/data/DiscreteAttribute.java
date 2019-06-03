@@ -1,6 +1,6 @@
-package attribute;
+package data;
 
-import attribute.Attribute;
+import data.Attribute;
 
 public class DiscreteAttribute extends Attribute {
     private String[] values;

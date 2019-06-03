@@ -1,5 +1,5 @@
-package cluster;
-import qtminer.Data;
+package mining;
+import data.Data;
 
 public class ClusterSet {
     private Cluster C[] = new Cluster[0];

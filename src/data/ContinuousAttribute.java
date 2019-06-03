@@ -1,4 +1,6 @@
-package attribute;
+package data;
+
+import data.Attribute;
 
 public class ContinuousAttribute extends Attribute {
     private double max;

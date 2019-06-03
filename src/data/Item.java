@@ -1,6 +1,6 @@
-package item;
+package data;
 
-import attribute.Attribute;
+import data.Attribute;
 
 public abstract class Item {
     private Attribute attribute;
@@ -24,4 +24,8 @@ public abstract class Item {
     }
 
     public abstract double distance(Object a);
+
+    public static void main(String[] args){
+        System.out.println("CIao");
+    }
 }

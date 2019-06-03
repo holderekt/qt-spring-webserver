@@ -1,10 +1,12 @@
-package cluster;
-import qtminer.Data;
+package mining;
+import cluster.ArraySet;
+import data.Data;
+import data.Tuple;
 
 public class Cluster {
 	private Tuple centroid;
 
-	private ArraySet clusteredData; 
+	private ArraySet clusteredData;
 
 	public Cluster(Tuple centroid){
 		this.centroid=centroid;

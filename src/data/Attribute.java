@@ -1,4 +1,4 @@
-package attribute;
+package data;
 
 public class Attribute {
     private String name;

@@ -1,7 +1,6 @@
-package qtminer;
+package mining;
 
-import cluster.*;
-import cluster.ClusterSet;
+import data.Data;
 
 import java.io.IOException;
 

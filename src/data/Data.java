@@ -1,9 +1,4 @@
-package qtminer;
-
-import attribute.Attribute;
-import attribute.DiscreteAttribute;
-import cluster.Tuple;
-import item.DiscreteItem;
+package data;
 
 public class Data {
     private Object[][] data;
