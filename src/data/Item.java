@@ -20,7 +20,7 @@ public abstract class Item {
     }
 
     public String toString(){
-        return (String)value;
+        return (String)value.toString();
     }
 
     public abstract double distance(Object a);

@@ -69,13 +69,10 @@ public class QTMiner {
                 //System.out.println("Centroid " + clu.getCentroid());
 
                 for(int j = 0; j!= data.getNumberOfExplanatoryAttributes(); j++){
-                    if(!isClustered[j]){
-                       //System.out.println("Tuple" + data.getItemSet(j) + " " + clu.getCentroid().getDistance(data.getItemSet(j)));
+                    //System.out.println("Tuple" + data.getItemSet(j) + " " + clu.getCentroid().getDistance(data.getItemSet(j)));
+                    if(!isClustered[j]) if (clu.getCentroid().getDistance(data.getItemSet(j)) <= radius) {
 
-                        if(clu.getCentroid().getDistance(data.getItemSet(j)) <= radius){
-
-                            clu.addData(j);
-                        }
+                        clu.addData(j);
                     }
                 }
 
