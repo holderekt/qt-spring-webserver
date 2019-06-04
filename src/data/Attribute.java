@@ -1,6 +1,8 @@
 package data;
 
-public class Attribute {
+import java.io.Serializable;
+
+public class Attribute implements Serializable {
     private String name;
     private int index;
 

@@ -1,6 +1,8 @@
 package data;
 
-public class DiscreteItem extends Item {
+import java.io.Serializable;
+
+public class DiscreteItem extends Item implements Serializable {
     public DiscreteItem(DiscreteAttribute attribute, String value){
         super(attribute, value);
     }

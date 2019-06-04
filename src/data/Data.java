@@ -101,7 +101,7 @@ public class Data {
         String[] outlookValues = { "Sunny, Overcast, Rain" };
         attributeSet.add(new DiscreteAttribute("Outlook", 0, outlookValues));
 
-        attributeSet.add(new ContinuousAttribute("Temperature", 1, 3.2,28.7));
+        attributeSet.add(new ContinuousAttribute("Temperature", 1, 3.2,38.7));
 
         String[] humidityValues = {"High", "Normal"};
         attributeSet.add(new DiscreteAttribute("Humidity", 2, humidityValues));
@@ -139,7 +139,7 @@ public class Data {
         for (int i = 0; i != getNumberOfExplanatoryAttributes(); i++) {
             result += i + ".";
             for (int j = 0; j != attributeSet.size(); j++) {
-                result += (String)data[i][j].toString() + ", ";
+                result += (String)data[i][j].toString()  + ", ";
             }
             result += "\n";
         }

@@ -1,9 +1,10 @@
 package mining;
 import data.Data;
 
+import java.io.Serializable;
 import java.util.*;
 
-public class ClusterSet implements Iterable<Cluster>{
+public class ClusterSet implements Iterable<Cluster>, Serializable  {
     // TODO risolvere questa ambiguità
     private Set<Cluster> C = new TreeSet<>();
     private int len = 0;

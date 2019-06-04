@@ -1,6 +1,8 @@
 package data;
 
-public class ContinuousItem extends Item{
+import java.io.Serializable;
+
+public class ContinuousItem extends Item implements Serializable {
 
     public ContinuousItem(ContinuousAttribute attribute, Double value) {
         super(attribute, value);
@@ -13,8 +15,13 @@ public class ContinuousItem extends Item{
         ContinuousAttribute otherAttribute = (ContinuousAttribute)otherItem.getAttribute();
 
         double a = thisAttribute.getScaledValue((Double)this.getValue());
-        double b = otherAttribute.getScaledValue((Double)otherItem.getValue());
+        double b = thisAttribute.getScaledValue((Double)otherItem.getValue());
 
-        return Math.abs(a - b);
+        System.out.println("A:" + (Double)this.getValue()+ "   B:" + otherItem.getValue());
+        System.out.println("Max " + thisAttribute.toString());
+        System.out.println(" Calcolo " + a + " " + b + " " + Math.abs(b - a));
+        return Math.abs(b - a);
+
+
     }
 }

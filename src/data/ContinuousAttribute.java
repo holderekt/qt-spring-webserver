@@ -2,7 +2,9 @@ package data;
 
 import data.Attribute;
 
-public class ContinuousAttribute extends Attribute {
+import java.io.Serializable;
+
+public class ContinuousAttribute extends Attribute implements Serializable {
     private double max;
     private double min;
 
@@ -13,6 +15,8 @@ public class ContinuousAttribute extends Attribute {
     }
 
     public double getScaledValue(double v){
-        return ((v-min)/(max-min));
+        double up = v - min;
+        double down = max - min;
+        return (up / down);
     }
 }

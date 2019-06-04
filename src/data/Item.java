@@ -2,7 +2,9 @@ package data;
 
 import data.Attribute;
 
-public abstract class Item {
+import java.io.Serializable;
+
+public abstract class Item implements Serializable {
     private Attribute attribute;
     private Object value;
 
