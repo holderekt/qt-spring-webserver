@@ -2,7 +2,7 @@ package main.java;
 import data.Data;
 import keyboardinput.Keyboard;
 import mining.ClusteringRadiusException;
-import mining.EmptyDatasetException;
+import data.EmptyDatasetException;
 import mining.QTMiner;
 import java.io.IOException;
 

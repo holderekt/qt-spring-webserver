@@ -2,7 +2,9 @@ package data;
 
 import data.Attribute;
 
-public abstract class Item {
+import java.io.Serializable;
+
+public abstract class Item implements Serializable {
     private Attribute attribute;
     private Object value;
 
@@ -20,7 +22,7 @@ public abstract class Item {
     }
 
     public String toString(){
-        return (String)value;
+        return (String)value.toString();
     }
 
     public abstract double distance(Object a);
