@@ -5,16 +5,21 @@ import mining.ClusteringRadiusException;
 import data.EmptyDatasetException;
 import mining.QTMiner;
 import java.io.IOException;
+// import com.mysql.jdbc.Driver;
+import java.sql.Driver;
+import java.sql.DriverManager;
 
 public class MainTest {
 
 	/**
 	 * @param args
 	 */
-	public static void main(String[] args) throws IOException {
+	public static void main(String[] args) throws IOException, ClassNotFoundException, IllegalAccessException, InstantiationException {
 
 		double radius = 0;
 		boolean repeat = true;
+
+		Class.forName("com.mysql.jdbc.Driver").newInstance();
 
 		while(repeat == true){
 

@@ -17,3 +17,7 @@ sourceSets {
 }
 
  mainClassName = 'main.java.MainTest'
+
+dependencies{
+    compile fileTree(dir: 'lib', include: ['*.jar'])
+}
