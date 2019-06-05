@@ -19,7 +19,7 @@ public class MainTest {
 		double radius = 0;
 		boolean repeat = true;
 
-		Class.forName("com.mysql.jdbc.Driver").newInstance();
+		Class.forName("com.mysql.cj.jdbc.Driver").newInstance();
 
 		while(repeat == true){
 

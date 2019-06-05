@@ -78,12 +78,12 @@ public class QTMiner {
             if(!isClustered[i]){
                 // Aggiungo un cluster con centroide su i
                 Cluster clu = new Cluster(data.getItemSet(i));
-                System.out.println("-------");
-                System.out.println("Centroid " + clu.getCentroid());
+                //System.out.println("-------");
+                //System.out.println("Centroid " + clu.getCentroid());
 
                 for(int j = 0; j!= data.getNumberOfExplanatoryAttributes(); j++){
                     double distance = clu.getCentroid().getDistance(data.getItemSet(j));
-                    System.out.println("Tuple" + data.getItemSet(j) + " " + distance );
+                   // System.out.println("Tuple" + data.getItemSet(j) + " " + distance );
                     if(!isClustered[j])
                         if (distance <= radius) {
                             clu.addData(j);
@@ -96,7 +96,7 @@ public class QTMiner {
                 //while(cc.hasNext()){
                   //  System.out.print(cc.next() + " ");
                 //}
-                System.in.read();
+               // System.in.read();
 
 
                 //System.out.println(clu.toString(data));
@@ -118,9 +118,9 @@ public class QTMiner {
 
         while(iterclu.hasNext()){
             Cluster next = iterclu.next();
-            System.out.println("-----------------------");
-            System.out.println(next.toString(data)+ "  SIZE " + next.getSize());
-            System.out.println("-----------------------");
+            //System.out.println("-----------------------");
+            //System.out.println(next.toString(data)+ "  SIZE " + next.getSize());
+            //System.out.println("-----------------------");
             if(next.getSize() >= max.getSize()){
                 max = next;
             }
@@ -135,7 +135,7 @@ public class QTMiner {
         }
 
         //System.out.println(max);
-        System.in.read();
+        //System.in.read();
 
         return max;
     }

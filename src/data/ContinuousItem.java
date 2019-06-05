@@ -17,9 +17,9 @@ public class ContinuousItem extends Item implements Serializable {
         double a = thisAttribute.getScaledValue((Double)this.getValue());
         double b = thisAttribute.getScaledValue((Double)otherItem.getValue());
 
-        System.out.println("A:" + (Double)this.getValue()+ "   B:" + otherItem.getValue());
-        System.out.println("Max " + thisAttribute.toString());
-        System.out.println(" Calcolo " + a + " " + b + " " + Math.abs(b - a));
+        //System.out.println("A:" + (Double)this.getValue()+ "   B:" + otherItem.getValue());
+        //System.out.println("Max " + thisAttribute.toString());
+        //System.out.println(" Calcolo " + a + " " + b + " " + Math.abs(b - a));
         return Math.abs(b - a);
 
 
