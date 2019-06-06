@@ -52,8 +52,6 @@ public class TableSchema {
 		mapSQL_JAVATypes.put("FLOAT","number");
 		mapSQL_JAVATypes.put("DOUBLE","number");
 		
-		
-	
 		 Connection con=db.getConnection();
 		 DatabaseMetaData meta = con.getMetaData();
 	     ResultSet res = meta.getColumns(null, null, tableName, null);
@@ -70,9 +68,6 @@ public class TableSchema {
 	         
 	      }
 	      res.close();
-	
-	
-	    
 	    }
 	  
 	

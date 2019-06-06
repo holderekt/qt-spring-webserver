@@ -2,7 +2,11 @@ package main.java;
 
 import java.io.FileNotFoundException;
 import java.io.IOException;
+import java.sql.SQLException;
 
+import database.DatabaseConnectionException;
+import database.EmptyTypeException;
+import database.NoValueException;
 import keyboardinput.Keyboard;
 import mining.ClusteringRadiusException;
 import mining.QTMiner;
@@ -35,7 +39,7 @@ public class MainTest2{
 		return new QTMiner(fileName+".dmp");
 		
 	}
-	public static void main(String[] args) {
+	public static void main(String[] args) throws NoValueException, SQLException, EmptyTypeException, DatabaseConnectionException, ClassNotFoundException, IllegalAccessException, InstantiationException {
 		
 		MainTest2 main=new MainTest2();
 		do{
@@ -55,7 +59,7 @@ public class MainTest2{
 					}
 					break;
 				case 2:
-					Data data =new Data();
+					Data data =new Data("playtennis");
 					System.out.println(data);
 					char answer='y';
 					do{
