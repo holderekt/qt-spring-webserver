@@ -14,6 +14,6 @@ public class MultiServer {
 
 
     public static void main(String[] args){
-        MultiServer server = new MultiServer();
+        MultiServer server = new MultiServer(Integer.parseInt(args[0]));
     }
 }
