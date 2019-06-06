@@ -1,20 +1,29 @@
 package main.java;
 import data.Data;
+import database.DatabaseConnectionException;
+import database.EmptyTypeException;
+import database.NoValueException;
 import keyboardinput.Keyboard;
 import mining.ClusteringRadiusException;
 import data.EmptyDatasetException;
 import mining.QTMiner;
 import java.io.IOException;
+// import com.mysql.jdbc.Driver;
+import java.sql.Driver;
+import java.sql.DriverManager;
+import java.sql.SQLException;
 
 public class MainTest {
 
 	/**
 	 * @param args
 	 */
-	public static void main(String[] args) throws IOException {
+	public static void main(String[] args) throws IOException, ClassNotFoundException, IllegalAccessException, InstantiationException, NoValueException, SQLException, EmptyTypeException, DatabaseConnectionException {
 
 		double radius = 0;
 		boolean repeat = true;
+
+		//Class.forName("com.mysql.cj.jdbc.Driver").newInstance();
 
 		while(repeat == true){
 
@@ -27,7 +36,7 @@ public class MainTest {
 
 			int numIter;
 
-			Data data =new Data();
+			Data data =new Data("playtennis");
 			System.out.println(data);
 			QTMiner qt=new QTMiner(radius);
 

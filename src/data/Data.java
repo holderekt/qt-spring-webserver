@@ -1,118 +1,47 @@
 package data;
 
-import java.util.LinkedList;
-import java.util.List;
+import database.*;
+import java.sql.SQLException;
+import java.util.*;
 
 public class Data {
-    private Object[][] data;
+    private List<Example> data = new ArrayList<>();
     private int numberOfExamples;
     private List<Attribute> attributeSet = new LinkedList<>();
 
-    public Data() {
-        data = new Object[14][5];
+    public Data(String tablename) throws SQLException, EmptyTypeException, NoValueException, DatabaseConnectionException, ClassNotFoundException, InstantiationException, IllegalAccessException {
+        DbAccess db = new DbAccess();
+        db.initConnection();
+        TableData table = new TableData(db);
+        data = table.getDistinctTransazioni(tablename);
+        numberOfExamples = data.size();
 
 
-        data[0][0] = "Sunny";
-        data[0][1] = new Double(30.3);
-        data[0][2] = "High";
-        data[0][3] = "Weak";
-        data[0][4] = "No";
+        TableSchema tb = new TableSchema(db,tablename);
 
-        data[1][0] = "Sunny";
-        data[1][1] = new Double(30.3);
-        data[1][2] = "High";
-        data[1][3] = "Strong";
-        data[1][4] = "No";
+        for(int i=0;i< tb.getNumberOfAttributes();i++){
+            String attributeName = tb.getColumn(i).getColumnName();
+            if(tb.getColumn(i).isNumber()){
+                // Caso Numerico
+                Float min = (Float)table.getAggregateColumnValue(tablename,tb.getColumn(i), QUERY_TYPE.MIN);
+                Float max = (Float)table.getAggregateColumnValue(tablename,tb.getColumn(i), QUERY_TYPE.MAX);
 
-        data[2][0] = "Overcast";
-        data[2][1] = new Double(30);
-        data[2][2] = "High";
-        data[2][3] = "Weak";
-        data[2][4] = "Yes";
+                attributeSet.add(new ContinuousAttribute(attributeName,i,min,max));
 
-        data[3][0] = "Rain";
-        data[3][1] = new Double(13);
-        data[3][2] = "High";
-        data[3][3] = "Weak";
-        data[3][4] = "Yes";
+            }else{
+                // Caso Stringa
+                Set<Object> values_ob = table.getDistinctColumnValues(tablename,tb.getColumn(i));
+                String[] elements = new String[values_ob.size()];
+                Iterator iter = values_ob.iterator();
+                int j = 0;
+                while(iter.hasNext()){
+                    elements[j] = (String)iter.next().toString();
+                    j++;
+                }
 
-        data[4][0] = "Rain";
-        data[4][1] = new Double(0);
-        data[4][2] = "Normal";
-        data[4][3] = "Weak";
-        data[4][4] = "Yes";
-
-        data[5][0] = "Rain";
-        data[5][1] = new Double(0);
-        data[5][2] = "Normal";
-        data[5][3] = "Strong";
-        data[5][4] = "No";
-
-        data[6][0] = "Overcast";
-        data[6][1] = new Double(0.1);
-        data[6][2] = "Normal";
-        data[6][3] = "Strong";
-        data[6][4] = "Yes";
-
-        data[7][0] = "Sunny";
-        data[7][1] = new Double(13);
-        data[7][2] = "High";
-        data[7][3] = "Weak";
-        data[7][4] = "No";
-
-        data[8][0] = "Sunny";
-        data[8][1] = new Double(0.1);
-        data[8][2] = "Normal";
-        data[8][3] = "Weak";
-        data[8][4] = "Yes";
-
-
-        data[9][0] = "Rain";
-        data[9][1] = new Double(12);
-        data[9][2] = "Normal";
-        data[9][3] = "Weak";
-        data[9][4] = "Yes";
-
-        data[10][0] = "Sunny";
-        data[10][1] = new Double(12.5);
-        data[10][2] = "Normal";
-        data[10][3] = "Strong";
-        data[10][4] = "Yes";
-
-        data[11][0] = "Overcast";
-        data[11][1] = new Double(12.5);
-        data[11][2] = "High";
-        data[11][3] = "Strong";
-        data[11][4] = "Yes";
-
-        data[12][0] = "Overcast";
-        data[12][1] = new Double(29.21);
-        data[12][2] = "Normal";
-        data[12][3] = "Weak";
-        data[12][4] = "Yes";
-
-        data[13][0] = "Rain";
-        data[13][1] = new Double(12.5);
-        data[13][2] = "High";
-        data[13][3] = "Strong";
-        data[13][4] = "No";
-
-
-        String[] outlookValues = { "Sunny, Overcast, Rain" };
-        attributeSet.add(new DiscreteAttribute("Outlook", 0, outlookValues));
-
-        attributeSet.add(new ContinuousAttribute("Temperature", 1, 3.2,38.7));
-
-        String[] humidityValues = {"High", "Normal"};
-        attributeSet.add(new DiscreteAttribute("Humidity", 2, humidityValues));
-
-        String[] windValues = {"Weak", "Strong"};
-        attributeSet.add(new DiscreteAttribute("Wind", 3, windValues));
-
-        String[] tennisValues = {"Yes", "No"};
-        attributeSet.add(new DiscreteAttribute("PlayTennis", 4, tennisValues));
-
-        numberOfExamples = 14;
+                attributeSet.add(new DiscreteAttribute(attributeName, i, elements));
+            }
+        }
     }
 
 
@@ -125,7 +54,7 @@ public class Data {
     }
 
     public Object getValue(int exampleIndex, int attributeIndex) {
-        return data[exampleIndex][attributeIndex];
+        return data.get(exampleIndex).get(attributeIndex);
     }
 
     public String toString() {
@@ -139,7 +68,7 @@ public class Data {
         for (int i = 0; i != getNumberOfExplanatoryAttributes(); i++) {
             result += i + ".";
             for (int j = 0; j != attributeSet.size(); j++) {
-                result += (String)data[i][j].toString()  + ", ";
+                result += (String)data.get(i).get(j).toString()  + ", ";
             }
             result += "\n";
         }
@@ -152,9 +81,9 @@ public class Data {
         for(int i = 0; i!= attributeSet.size(); i++){
             Object o = attributeSet.get(i);
             if(o instanceof DiscreteAttribute){
-                tuple.add(new DiscreteItem((DiscreteAttribute)attributeSet.get(i), (String)data[index][i]), i);
+                tuple.add(new DiscreteItem((DiscreteAttribute)attributeSet.get(i), (String)data.get(index).get(i)), i);
             }else if( o instanceof  ContinuousAttribute){
-                tuple.add(new ContinuousItem((ContinuousAttribute)attributeSet.get(i), (Double)data[index][i]), i);
+                tuple.add(new ContinuousItem((ContinuousAttribute)attributeSet.get(i), (Double)data.get(index).get(i)), i);
             }
         }
         return tuple;
