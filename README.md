@@ -1,5 +1,5 @@
 
-# map-lab  ![alt text](https://img.shields.io/badge/advancement-85%25-blue.svg)
+# map-lab [![Build Status](https://travis-ci.com/holderekt/map-lab.svg?token=zYihrEzEodBtdzXuoqNx&branch=master)](https://travis-ci.com/holderekt/map-lab) ![alt text](https://img.shields.io/badge/advancement-85%25-blue.svg)
 Caso di studio del corso "Metodi Avanzati di Programmazione"
  
 
