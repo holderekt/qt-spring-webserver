@@ -23,7 +23,7 @@ public class DbAccess {
         System.out.println(CONNECTION_URL + "?" + CREDENTIALS);
 
         try{
-            conn = DriverManager.getConnection(CONNECTION_URL + "?" + CREDENTIALS);
+            conn = DriverManager.getConnection(CONNECTION_URL + "?" + CREDENTIALS + "&serverTimezone=UTC");
         }catch(Exception e){
             e.printStackTrace();
             throw  new DatabaseConnectionException();

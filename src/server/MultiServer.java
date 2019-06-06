@@ -1,19 +1,26 @@
 package server;
 
-public class MultiServer {
-    private int port = 8080;
+import java.io.IOException;
+import java.net.ServerSocket;
+import java.net.Socket;
 
-    public MultiServer(int port){
-        this.port = port;
+public class MultiServer {
+    private int PORT = 8080;
+
+    public MultiServer(int port) throws IOException {
+        this.PORT = port;
         run();
     }
 
-    private void run(){
-        // TODO Finire implementazione
+    private void run() throws IOException {
+        ServerSocket s = new ServerSocket(PORT);
+        while(true){
+            Socket so = s.accept();
+            new ServerOneClient(so);
+        }
     }
 
-
-    public static void main(String[] args){
+    public static void main(String[] args) throws IOException {
         MultiServer server = new MultiServer(Integer.parseInt(args[0]));
     }
 }
