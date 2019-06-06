@@ -9,7 +9,7 @@ import java.util.HashMap;
 import java.util.Iterator;
 import java.util.List;
 
-/*
+
 
 
 public class TableSchema {
@@ -17,20 +17,25 @@ public class TableSchema {
 	public class Column{
 		private String name;
 		private String type;
+
 		Column(String name,String type){
 			this.name=name;
 			this.type=type;
 		}
+
 		public String getColumnName(){
 			return name;
 		}
+
 		public boolean isNumber(){
 			return type.equals("number");
 		}
+
 		public String toString(){
 			return name+":"+type;
 		}
 	}
+
 	List<Column> tableSchema=new ArrayList<Column>();
 	
 	public TableSchema(DbAccess db, String tableName) throws SQLException{
@@ -78,10 +83,5 @@ public class TableSchema {
 		public Column getColumn(int index){
 			return tableSchema.get(index);
 		}
-
-		
 	}
-
-		     
-*/
 

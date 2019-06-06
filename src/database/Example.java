@@ -4,7 +4,6 @@ import java.util.ArrayList;
 import java.util.List;
 
 
-
 public class Example implements Comparable<Example>{
 	private List<Object> example=new ArrayList<Object>();
 

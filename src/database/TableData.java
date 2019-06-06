@@ -13,21 +13,19 @@ import java.util.Set;
 import java.util.TreeSet;
 
 
-/*
+
 import database.TableSchema.Column;
 
 
 public class TableData {
 
 	DbAccess db;
-	
 
-	
 	public TableData(DbAccess db) {
 		this.db=db;
 	}
 
-	public List<Example> getDistinctTransazioni(String table) throws SQLException, EmptySetException{
+	public List<Example> getDistinctTransazioni(String table) throws SQLException, EmptyTypeException{
 		LinkedList<Example> transSet = new LinkedList<Example>();
 		Statement statement;
 		TableSchema tSchema=new TableSchema(db,table);
@@ -60,7 +58,7 @@ public class TableData {
 		}
 		rs.close();
 		statement.close();
-		if(empty) throw new EmptySetException();
+		if(empty) throw new EmptyTypeException();
 		
 		
 		return transSet;
@@ -131,10 +129,4 @@ public class TableData {
 		return value;
 
 	}
-
-	
-
-	
-
 }
-*/

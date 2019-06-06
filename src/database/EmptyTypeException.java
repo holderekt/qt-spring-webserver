@@ -1,4 +1,9 @@
 package database;
 
-public class EmptyTypeException {
+import data.EmptyDatasetException;
+
+public class EmptyTypeException extends Exception {
+    public EmptyTypeException(){
+        super("Query result is empty");
+    }
 }
