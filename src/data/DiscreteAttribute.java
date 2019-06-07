@@ -11,8 +11,8 @@ public class DiscreteAttribute extends Attribute implements Iterable<String>, Se
 
     public DiscreteAttribute(String name, int index, String[] values) {
         super(name, index);
-        for(String a : values){
-            this.values.add(a);
+        for(String val : values){
+            this.values.add(val);
         }
     }
 
