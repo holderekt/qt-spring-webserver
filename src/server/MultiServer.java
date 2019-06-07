@@ -14,13 +14,22 @@ public class MultiServer {
 
     private void run() throws IOException {
         ServerSocket s = new ServerSocket(PORT);
-        while(true){
-            Socket so = s.accept();
-            new ServerOneClient(so);
+        try{
+            while(true){
+                Socket so = s.accept();
+                try{
+                    new ServerOneClient(so);
+                }catch(IOException e){
+                    so.close();
+                }
+            }
+        }finally{
+            s.close();
         }
     }
 
     public static void main(String[] args) throws IOException {
-        MultiServer server = new MultiServer(Integer.parseInt(args[0]));
+        args[0] = "8080";
+        new MultiServer(Integer.parseInt(args[0]));
     }
 }
