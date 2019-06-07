@@ -2,13 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="85b127a6-d1d2-450b-9fd0-e93079d46af4" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/data/Data.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/data/Data.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/database/DatabaseConnectionException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/database/DatabaseConnectionException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/database/DbAccess.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/database/DbAccess.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/database/TableData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/database/TableData.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/database/TableSchema.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/database/TableSchema.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/server/ServerOneClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/server/ServerOneClient.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -105,8 +98,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/server/ServerOneClient.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="358">
-              <caret line="92" column="42" selection-start-line="92" selection-start-column="42" selection-end-line="92" selection-end-column="42" />
+            <state relative-caret-position="390">
+              <caret line="93" column="60" selection-start-line="93" selection-start-column="60" selection-end-line="93" selection-end-column="60" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -738,8 +731,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/server/ServerOneClient.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="358">
-          <caret line="92" column="42" selection-start-line="92" selection-start-column="42" selection-end-line="92" selection-end-column="42" />
+        <state relative-caret-position="390">
+          <caret line="93" column="60" selection-start-line="93" selection-start-column="60" selection-end-line="93" selection-end-column="60" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

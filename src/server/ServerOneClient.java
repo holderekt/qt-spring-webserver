@@ -7,6 +7,8 @@ import database.EmptyTypeException;
 import database.NoValueException;
 import mining.ClusteringRadiusException;
 import mining.QTMiner;
+
+import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
@@ -65,16 +67,34 @@ public class ServerOneClient extends Thread {
 
                     case 1: // Learn from database table
                         radius = (Double)in.readObject();
-                        niter = learnFromTable(db_table, radius);
-                        out.writeObject("OK");
-                        out.writeObject(niter);
-                        out.writeObject(kmeans.toString(db_table));
+
+                        try{
+                            niter = learnFromTable(db_table, radius);
+                            output_message = "OK";
+                        } catch (EmptyDatasetException | ClusteringRadiusException | IOException e) {
+                            output_message = e.getMessage();
+                        }
+
+                        out.writeObject(output_message);
+
+                        if(output_message == "OK"){
+                            out.writeObject(niter);
+                            out.writeObject(kmeans.toString(db_table));
+                        }
+
                         break;
 
                     case 2: // Store cluster in file
-                        String filename = (String)in.readObject();
-                        filename += ".dmp";
-                        kmeans.salva(filename);
+
+                        String filename = (String)in.readObject() + ".dmp";
+
+                        try{
+                            kmeans.salva(filename);
+                        } catch (FileNotFoundException | IOException e) {
+                            output_message = e.getMessage();
+                        }
+
+
                         out.writeObject("OK");
                         break;
 
@@ -89,11 +109,7 @@ public class ServerOneClient extends Thread {
                 }
             }
 
-        }catch(IOException e){
-            // TODO COMPLETARE AGGIUSTANDO
-            e.printStackTrace();
-
-        } finally {
+        }finally {
             System.out.println("Closing THREAD " + this.getId() + " - " + socket);
             try {
                 socket.close();
@@ -107,7 +123,7 @@ public class ServerOneClient extends Thread {
         return new Data(tablename);
     }
 
-    private  int learnFromTable(Data data, double radius){
+    private int learnFromTable(Data data, double radius) throws EmptyDatasetException, IOException, ClusteringRadiusException {
         kmeans = new QTMiner(radius);
         return kmeans.compute(data);
     }
