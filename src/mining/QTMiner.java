@@ -20,12 +20,17 @@ public class QTMiner {
         FileInputStream inFile = new FileInputStream(filename);
         ObjectInputStream inStream = new ObjectInputStream(inFile);
         C = (ClusterSet)inStream.readObject();
+        inStream.close();
+        inFile.close();
+
     }
 
     public void salva(String filename) throws  FileNotFoundException, IOException {
         FileOutputStream outFile = new FileOutputStream(filename);
         ObjectOutputStream outStream = new ObjectOutputStream(outFile);
         outStream.writeObject(C);
+        outStream.close();
+        outFile.close();
     }
 
 
