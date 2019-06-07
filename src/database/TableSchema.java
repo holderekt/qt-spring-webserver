@@ -6,11 +6,7 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.HashMap;
-import java.util.Iterator;
 import java.util.List;
-
-
-
 
 public class TableSchema {
 	DbAccess db;
@@ -63,9 +59,6 @@ public class TableSchema {
 	        				 res.getString("COLUMN_NAME"),
 	        				 mapSQL_JAVATypes.get(res.getString("TYPE_NAME")))
 	        				 );
-	
-	         
-	         
 	      }
 	      res.close();
 	    }

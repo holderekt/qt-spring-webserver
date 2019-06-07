@@ -16,7 +16,7 @@ sourceSets {
     }
 }
 
- mainClassName = 'main.java.MainTest'
+ mainClassName = 'server.MultiServer'
 
 dependencies{
     compile fileTree(dir: 'lib', include: ['*.jar'])

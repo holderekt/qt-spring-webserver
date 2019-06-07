@@ -15,26 +15,37 @@ public class DbAccess {
     private Connection conn;
 
 
-    public void initConnection() throws DatabaseConnectionException, ClassNotFoundException, SQLException, IllegalAccessException, InstantiationException {
-        Class.forName(DRIVER_CLASS_NAME);
+    public void initConnection() throws DatabaseConnectionException {
+
+        // Load MYSQL Driver
+        try{
+            Class.forName(DRIVER_CLASS_NAME).newInstance();
+        }catch(ClassNotFoundException | InstantiationException | IllegalAccessException e){
+            throw new DatabaseConnectionException("MYSQL Driver not found");
+        }
+
         String CONNECTION_URL = DBMS + "://" + SERVER + ":" + PORT + "/" + DATABASE;
         String CREDENTIALS = "user=" + USER_ID + "&password=" + PASSWORD;
 
-        System.out.println(CONNECTION_URL + "?" + CREDENTIALS);
-
+        // Database Connection
         try{
             conn = DriverManager.getConnection(CONNECTION_URL + "?" + CREDENTIALS + "&serverTimezone=UTC");
-        }catch(Exception e){
-            e.printStackTrace();
-            throw  new DatabaseConnectionException();
+        }catch(SQLException e){
+            throw  new DatabaseConnectionException("Can't connect to MYSQL Database");
         }
     }
+
 
     public Connection getConnection(){
         return conn;
     }
 
-    public void closeConnection() throws SQLException {
-        conn.close();
+    public void closeConnection() {
+        try{
+            conn.close();
+        }catch (SQLException e){
+            e.printStackTrace();
+            System.out.println("Can't close database connection");
+        }
     }
 }
