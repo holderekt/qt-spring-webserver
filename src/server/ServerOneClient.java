@@ -7,8 +7,6 @@ import database.EmptyTypeException;
 import database.NoValueException;
 import mining.ClusteringRadiusException;
 import mining.QTMiner;
-
-import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
@@ -43,8 +41,9 @@ public class ServerOneClient extends Thread {
                     selection = (int)temp_selection;
                 }
 
-                String tablename = "";
-                Double radius = 0.0;
+                String tablename;
+                Double radius;
+
                 int niter = 0;
                 String output_message;
 
@@ -57,8 +56,15 @@ public class ServerOneClient extends Thread {
                         try{
                             db_table = retrieveDatabaseTable(tablename);
                             output_message = "OK";
+
                         } catch (DatabaseConnectionException | NoValueException | SQLException | EmptyTypeException e) {
-                            output_message = e.getMessage();
+                            e.printStackTrace();
+
+                            if(e.getMessage() == null){
+                                output_message = "Error: Could not retrieve data from database";
+                            }else{
+                                output_message = e.getMessage();
+                            }
                         }
 
                         out.writeObject(output_message);
@@ -72,7 +78,13 @@ public class ServerOneClient extends Thread {
                             niter = learnFromTable(db_table, radius);
                             output_message = "OK";
                         } catch (EmptyDatasetException | ClusteringRadiusException | IOException e) {
-                            output_message = e.getMessage();
+                            e.printStackTrace();
+
+                            if(e.getMessage() == null){
+                                output_message = "Error: Could not learn from data";
+                            }else{
+                                output_message = e.getMessage();
+                            }
                         }
 
                         out.writeObject(output_message);
@@ -90,26 +102,52 @@ public class ServerOneClient extends Thread {
 
                         try{
                             kmeans.salva(filename);
-                        } catch (FileNotFoundException | IOException e) {
-                            output_message = e.getMessage();
+                            output_message = "OK";
+
+                        } catch (IOException e) {
+
+                            if(e.getMessage() == null){
+                                output_message = "Error: Could not save cluster in file";
+                            }else{
+                                output_message = e.getMessage();
+                            }
                         }
 
-
-                        out.writeObject("OK");
+                        out.writeObject(output_message);
                         break;
 
                     case 3: // Learn from file
+
                         filename = (String)in.readObject();
-                        learnFromFile(filename);
-                        this.out.writeObject("OK");
-                        System.out.println("Mario");
-                        this.out.writeObject(kmeans.toString());
-                        System.out.println("Mario2");
+
+                        try{
+                            learnFromFile(filename);
+                            output_message = "OK";
+                        } catch (IOException | ClassNotFoundException e) {
+                            e.printStackTrace();
+
+                            if(e.getMessage() == null){
+                                output_message = "Error: Could not learn from given file";
+                            }else{
+                                output_message = e.getMessage();
+                            }
+                        }
+
+                        out.writeObject(output_message);
+
+                        if(output_message == "OK"){
+                            out.writeObject(kmeans.toString());
+                        }
+
                         break;
                 }
             }
 
-        }finally {
+        } catch (IOException e) {
+            e.printStackTrace();
+        } catch (ClassNotFoundException e) {
+            e.printStackTrace();
+        } finally {
             System.out.println("Closing THREAD " + this.getId() + " - " + socket);
             try {
                 socket.close();
@@ -128,11 +166,8 @@ public class ServerOneClient extends Thread {
         return kmeans.compute(data);
     }
 
-    private void learnFromFile(String filename){
-
+    private void learnFromFile(String filename) throws IOException, ClassNotFoundException {
         filename += ".dmp";
-        System.out.println(socket + " " + filename);
         kmeans = new QTMiner(filename);
-
     }
 }
