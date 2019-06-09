@@ -3,8 +3,14 @@
 Caso di studio del corso "Metodi Avanzati di Programmazione"
 
 ## Utilizzo ###
-map-lab <porta> per avviare il server
-map-lab-client <ip> <porta> per avviare il client, utilizzare localhost per la rete locale.
+
+> map-lab porta  
+
+per avviare il server  
+
+> map-lab-client ip porta  
+
+per avviare il client, utilizzare localhost per la rete locale.  
 
 ### Da completare: ###
 - [x] Esercitazione 1
