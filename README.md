@@ -12,3 +12,9 @@ Caso di studio del corso "Metodi Avanzati di Programmazione"
 - [x] Esercitazione 6
 - [x] Esercitazione 7
 
+### Task aggiuntive: ###
+- [x] Code Cleanup
+- [x] Programmazione difensiva
+- [x] Bugfix generico
+- [ ] Checkstyle
+- [ ] Commenti generici / Javadoc
