@@ -1,7 +1,5 @@
 package data;
 
-import data.Attribute;
-
 import java.io.Serializable;
 
 public abstract class Item implements Serializable {
@@ -22,12 +20,9 @@ public abstract class Item implements Serializable {
     }
 
     public String toString(){
-        return (String)value.toString();
+        return value.toString();
     }
 
     public abstract double distance(Object a);
-
-    public static void main(String[] args){
-        System.out.println("CIao");
-    }
 }
+

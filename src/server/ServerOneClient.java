@@ -7,13 +7,12 @@ import database.EmptyTypeException;
 import database.NoValueException;
 import mining.ClusteringRadiusException;
 import mining.QTMiner;
-
-import java.io.EOFException;
 import java.io.IOException;
 import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
 import java.net.Socket;
 import java.sql.SQLException;
+
 
 public class ServerOneClient extends Thread {
     private Socket socket;
@@ -23,15 +22,16 @@ public class ServerOneClient extends Thread {
 
     public ServerOneClient(Socket so) throws IOException {
         socket = so;
-        System.out.println("THREAD started on " + socket);
         in = new ObjectInputStream(so.getInputStream());
         out = new ObjectOutputStream(so.getOutputStream());
         this.start();
+        System.out.println("THREAD " + this.getId() + " started on " + socket);
     }
 
     public void run(){
         try{
             Data db_table = null;
+
             while(true){
 
                 Object temp_selection = (int)in.readObject();
@@ -41,56 +41,114 @@ public class ServerOneClient extends Thread {
                     selection = (int)temp_selection;
                 }
 
-                String tablename = "";
-                Double radius = 0.0;
+                String tablename;
+                Double radius;
+
                 int niter = 0;
+                String output_message;
 
                 switch(selection){
+
                     case 0: // Retrieve table from database
+
                         tablename = (String)in.readObject();
-                        db_table = retrieveDatabaseTable(tablename);
-                        out.writeObject("OK");
+
+                        try{
+                            db_table = retrieveDatabaseTable(tablename);
+                            output_message = "OK";
+
+                        } catch (DatabaseConnectionException | NoValueException | SQLException | EmptyTypeException e) {
+                            e.printStackTrace();
+
+                            if(e.getMessage() == null){
+                                output_message = "Error: Could not retrieve data from database";
+                            }else{
+                                output_message = e.getMessage();
+                            }
+                        }
+
+                        out.writeObject(output_message);
+
                         break;
 
                     case 1: // Learn from database table
                         radius = (Double)in.readObject();
-                        niter = learnFromTable(db_table, radius);
-                        out.writeObject("OK");
-                        out.writeObject(niter);
-                        out.writeObject(kmeans.toString(db_table));
+
+                        try{
+                            niter = learnFromTable(db_table, radius);
+                            output_message = "OK";
+                        } catch (EmptyDatasetException | ClusteringRadiusException | IOException e) {
+                            e.printStackTrace();
+
+                            if(e.getMessage() == null){
+                                output_message = "Error: Could not learn from data";
+                            }else{
+                                output_message = e.getMessage();
+                            }
+                        }
+
+                        out.writeObject(output_message);
+
+                        if(output_message == "OK"){
+                            out.writeObject(niter);
+                            out.writeObject(kmeans.toString(db_table));
+                        }
+
                         break;
 
                     case 2: // Store cluster in file
-                        String filename = (String)in.readObject();
-                        filename += ".dmp";
-                        kmeans.salva(filename);
-                        out.writeObject("OK");
+
+                        String filename = (String)in.readObject() + ".dmp";
+
+                        try{
+                            kmeans.salva(filename);
+                            output_message = "OK";
+
+                        } catch (IOException e) {
+
+                            if(e.getMessage() == null){
+                                output_message = "Error: Could not save cluster in file";
+                            }else{
+                                output_message = e.getMessage();
+                            }
+                        }
+
+                        out.writeObject(output_message);
                         break;
 
                     case 3: // Learn from file
+
                         filename = (String)in.readObject();
-                        learnFromFile(filename);
-                        this.out.writeObject("OK");
-                        System.out.println("Mario");
-                        this.out.writeObject(kmeans.toString());
-                        System.out.println("Mario2");
+
+                        try{
+                            learnFromFile(filename);
+                            output_message = "OK";
+                        } catch (IOException | ClassNotFoundException e) {
+                            e.printStackTrace();
+
+                            if(e.getMessage() == null){
+                                output_message = "Error: Could not learn from given file";
+                            }else{
+                                output_message = e.getMessage();
+                            }
+                        }
+
+                        out.writeObject(output_message);
+
+                        if(output_message == "OK"){
+                            out.writeObject(kmeans.toString());
+                        }
+
                         break;
                 }
             }
 
-        }catch(IOException e){
-            // Close socket
-            try {
-                socket.close();
-            } catch (IOException ex) {
-                // Cannot close the socket
-                ex.printStackTrace();
-            }
-        } catch (ClassNotFoundException e) {
-            // Object class not found
+        } catch (IOException e) {
             e.printStackTrace();
-        }finally{
-            System.out.println("Closing " + socket);
+        } catch (ClassNotFoundException e) {
+            e.printStackTrace();
+        } finally {
+            System.out.println("Closing THREAD " + this.getId() + " - " + socket);
             try {
                 socket.close();
             } catch (IOException e) {
@@ -99,43 +157,17 @@ public class ServerOneClient extends Thread {
         }
     }
 
-    private Data retrieveDatabaseTable(String tablename){
-        Data result = null;
-        try {
-            result =  new Data(tablename);
-        } catch (Exception e) {
-
-        }
-        return result;
+    private Data retrieveDatabaseTable(String tablename) throws SQLException, EmptyTypeException, NoValueException, DatabaseConnectionException {
+        return new Data(tablename);
     }
 
-    private  int learnFromTable(Data data, double radius){
+    private int learnFromTable(Data data, double radius) throws EmptyDatasetException, IOException, ClusteringRadiusException {
         kmeans = new QTMiner(radius);
-
-        try {
-           return kmeans.compute(data);
-        } catch (IOException e) {
-            e.printStackTrace();
-        } catch (ClusteringRadiusException e) {
-            e.printStackTrace();
-        } catch (EmptyDatasetException e) {
-            e.printStackTrace();
-        }
-
-        return 0;
+        return kmeans.compute(data);
     }
 
-    private int learnFromFile(String filename){
-        try {
-            filename += ".dmp";
-            System.out.println(socket + " " + filename);
-            kmeans = new QTMiner(filename);
-        } catch (IOException e) {
-            e.printStackTrace();
-        } catch (ClassNotFoundException e) {
-            e.printStackTrace();
-        }
-
-        return 0;
+    private void learnFromFile(String filename) throws IOException, ClassNotFoundException {
+        filename += ".dmp";
+        kmeans = new QTMiner(filename);
     }
 }

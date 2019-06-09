@@ -26,6 +26,7 @@ public class Tuple implements Serializable {
     public double getDistance(Tuple obj){
 
         double total = 0;
+
         for(int i = 0; i!= tuple.length; i++){
             total += this.get(i).distance(obj.get(i));
         }
@@ -34,11 +35,12 @@ public class Tuple implements Serializable {
     }
 
     public double avgDistance(Data data, Set<Integer> clusteredData){
-        double p = 0.0, sumD = 0.0;
+        double p, sumD = 0.0;
 
         Iterator<Integer> elem = clusteredData.iterator();
+
         while(elem.hasNext()){
-            double d = getDistance(data.getItemSet((Integer)elem.next()));
+            double d = getDistance(data.getItemSet(elem.next()));
             sumD += d;
         }
 
@@ -48,6 +50,7 @@ public class Tuple implements Serializable {
 
     public String toString(){
         String result = "[";
+
         for(Item i : tuple){
             result += i.toString() + ",";
         }
