@@ -29,7 +29,6 @@ public class MultiServer {
     }
 
     public static void main(String[] args) throws IOException {
-        args[0] = "8080";
         new MultiServer(Integer.parseInt(args[0]));
     }
 }

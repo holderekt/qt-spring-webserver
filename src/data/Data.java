@@ -4,12 +4,40 @@ import database.*;
 import java.sql.SQLException;
 import java.util.*;
 
+/**
+ *  Dataset, tabella contenente un inseme di colonne ognuna definita
+ *  da un attributo
+ *
+ * @author Ivan Diliso
+ */
 public class Data {
 
+    /**
+     * Insieme di righe che formano la tabell
+     */
     private List<Example> data;
+
+    /**
+     * Numero di righe presenti
+     */
     private int numberOfExamples;
+
+    /**
+     * Insieme di attributi dei valori del dataset
+     */
     private List<Attribute> attributeSet;
 
+
+    /**
+     * Costruttore, costruisce la tabella caricando i dati da
+     * una tabella su database definita da "tablename"
+     *
+     * @param tablename Nome della tabella sul database
+     * @throws DatabaseConnectionException Errore nella connessione al database
+     * @throws SQLException Errore esecuzione query
+     * @throws EmptyTypeException Ricevuto un resultset vuoto
+     * @throws NoValueException Ricevuto un resulset vuoto durante l'esecuzione operatori sql di aggregazione
+     */
     public Data(String tablename) throws DatabaseConnectionException, SQLException, EmptyTypeException, NoValueException {
 
         attributeSet = new LinkedList<>();
@@ -51,18 +79,41 @@ public class Data {
     }
 
 
+    /**
+     * Restituisce il numero di examples (numero righe)
+     *
+     * @return numberOfExamples
+     */
     public int getNumberOfExplanatoryAttributes() {
         return numberOfExamples;
     }
 
+    /**
+     * Restituisce l'insieme degli attributi del dataset
+     *
+     * @return attributeSets
+     */
     public List<Attribute> getSchema() {
         return attributeSet;
     }
 
+    /**
+     * Restituisce valore contenuto nella riga indicata da exampleIndex e dalla
+     * colonna indicate da attributeIndex
+     *
+     * @param exampleIndex Indice riga
+     * @param attributeIndex Indice colonna
+     * @return data.get(exampleIndex).get(attributeIndex)
+     */
     public Object getValue(int exampleIndex, int attributeIndex) {
         return data.get(exampleIndex).get(attributeIndex);
     }
 
+    /**
+     * Restituisce il dataset in formato stringa
+     *
+     * @return result
+     */
     public String toString() {
         String result = "";
 
@@ -82,6 +133,13 @@ public class Data {
         return result;
     }
 
+    /**
+     * Restituisce la riga del dataset indicata dalla posizione index
+     * sotto forma di tupla
+     *
+     * @param index Indice della riga
+     * @return tuple
+     */
     public Tuple getItemSet(int index){
         Tuple tuple = new Tuple(attributeSet.size());
 
