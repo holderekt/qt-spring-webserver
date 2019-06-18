@@ -3,17 +3,41 @@ package database;
 import java.util.ArrayList;
 import java.util.List;
 
-
+/**
+ * Riga di una tabella
+ */
 public class Example implements Comparable<Example>{
+
+	/**
+	 * Insieme elementi riga
+	 */
 	private List<Object> example=new ArrayList<Object>();
 
+	/**
+	 * Aggiunge un elemento alla riga
+	 *
+	 * @param o Elemento da aggiungere
+	 */
 	public void add(Object o){
 		example.add(o);
 	}
-	
+
+	/**
+	 * Restituisce l'elemento della riga in posizione i
+	 *
+	 * @param i Posizione elemento
+	 * @return Object in posizione i
+	 */
 	public Object get(int i){
 		return example.get(i);
 	}
+
+	/**
+	 * Confonta l'example corrente con l'example in input
+	 *
+	 * @param ex Example da confrontare
+	 * @return 0 se uguali, intero positivo se this.example > example, negativo se this.example < example
+	 */
 	public int compareTo(Example ex) {
 		
 		int i=0;

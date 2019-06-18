@@ -8,36 +8,86 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 
+
+/**
+ * Schema di un tabella MySQL
+ */
 public class TableSchema {
+
+	/**
+	 * Database Access Tool
+	 */
 	DbAccess db;
+
+	/**
+	 * Colonna di una tabella
+	 */
 	public class Column{
+
+		/**
+		 * Nome degli elementi della colonna
+		 */
 		private String name;
+
+		/**
+		 * Tipo degli elemeni della colonna
+		 */
 		private String type;
 
+		/**
+		 * Costruttore, crea un nuova colonna
+		 * @param name Nome della colonna
+		 * @param type Nome del tipo elementi colonna
+		 */
 		Column(String name,String type){
 			this.name=name;
 			this.type=type;
 		}
 
+		/**
+		 * Restituisce il nome della colonna
+		 *
+		 * @return name
+		 */
 		public String getColumnName(){
 			return name;
 		}
 
+		/**
+		 * Restituisce se il tipo di colonna é numerico
+		 *
+		 * @return True se numerico, False altrimenti
+		 */
 		public boolean isNumber(){
 			return type.equals("number");
 		}
 
+		/**
+		 * Restituisce la colonna in formato stringa
+		 *
+		 * @return name + ":" + type
+		 */
 		public String toString(){
 			return name+":"+type;
 		}
 	}
 
+	/**
+	 * Insieme di colonne
+	 */
 	List<Column> tableSchema=new ArrayList<Column>();
-	
+
+
+	/**
+	 * Ricava lo schema delle colonne di una tabella MySQL
+	 *
+	 * @param db Database da utilizzare
+	 * @param tableName Nome della tabella
+	 * @throws SQLException Errore esecuzione query per metadata
+	 */
 	public TableSchema(DbAccess db, String tableName) throws SQLException{
 		this.db=db;
 		HashMap<String,String> mapSQL_JAVATypes=new HashMap<String, String>();
-		//http://java.sun.com/j2se/1.3/docs/guide/jdbc/getstart/mapping.html
 		mapSQL_JAVATypes.put("CHAR","string");
 		mapSQL_JAVATypes.put("VARCHAR","string");
 		mapSQL_JAVATypes.put("LONGVARCHAR","string");
@@ -61,15 +111,25 @@ public class TableSchema {
 	        				 );
 	      }
 	      res.close();
-	    }
-	  
-	
-		public int getNumberOfAttributes(){
-			return tableSchema.size();
-		}
-		
-		public Column getColumn(int index){
-			return tableSchema.get(index);
-		}
 	}
+
+	/**
+	 * Restituisce il numero di colonne nella tabella
+	 *
+	 * @return tableSchema.size()
+	 */
+	public int getNumberOfAttributes(){
+		return tableSchema.size();
+	}
+
+	/**
+	 * Restituisce la colonna nella posizione index
+	 *
+	 * @param index Indice posizione colonna
+	 * @return tableSchema.get(index)
+	 */
+	public Column getColumn(int index){
+		return tableSchema.get(index);
+	}
+}
 

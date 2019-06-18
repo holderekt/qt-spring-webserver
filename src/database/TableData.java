@@ -9,14 +9,33 @@ import java.util.Set;
 import java.util.TreeSet;
 import database.TableSchema.Column;
 
+/**
+ * Tool per l'esecuzioni di query su una tabella MySQL
+ */
 public class TableData {
 
+	/**
+	 *  Tool accesso al database
+	 */
 	DbAccess db;
 
+	/**
+	 * Costruttore, crea una nuova TableData
+	 *
+	 * @param db Tool per l'accesso al database
+	 */
 	public TableData(DbAccess db) {
 		this.db=db;
 	}
 
+	/**
+	 * Restituisce tutte le transazioni (tuple) dalla tabella MySQL table
+	 *
+	 * @param table Nome della tabella MySQL
+	 * @return transSet
+	 * @throws SQLException Errore esecuzione query
+ 	 * @throws EmptyTypeException transSet vuoto
+	 */
 	public List<Example> getDistinctTransazioni(String table) throws SQLException, EmptyTypeException{
 		LinkedList<Example> transSet = new LinkedList<Example>();
 		Statement statement;
@@ -57,8 +76,16 @@ public class TableData {
 
 	}
 
-	
-	public  Set<Object>getDistinctColumnValues(String table,Column column) throws SQLException{
+	/**
+	 * Restituisce tutti i valori distinti di una colonna di una tabella
+	 * su database
+	 *
+	 * @param table Nome tabella database
+	 * @param column Colonna della tabella
+	 * @return valueSet
+	 * @throws SQLException Errore esecuzione query
+	 */
+	public  Set<Object> getDistinctColumnValues(String table,Column column) throws SQLException{
 		Set<Object> valueSet = new TreeSet<Object>();
 		Statement statement;
 		TableSchema tSchema=new TableSchema(db,table);
@@ -90,6 +117,17 @@ public class TableData {
 
 	}
 
+	/**
+	 * Restituisce il risultato dell'esecuzione di un operatore aggregato MySQL
+	 * su una colonna di una tabella su database
+	 *
+	 * @param table Nome tabella su database
+	 * @param column Colonna della tabella
+	 * @param aggregate Operatore aggregato
+	 * @return value
+	 * @throws SQLException Errore esecuzione query
+	 * @throws NoValueException Value non trovato (null)
+	 */
 	public  Object getAggregateColumnValue(String table,Column column,QUERY_TYPE aggregate) throws SQLException,NoValueException{
 		Statement statement;
 		TableSchema tSchema=new TableSchema(db,table);
