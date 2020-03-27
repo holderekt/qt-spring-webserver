@@ -2,50 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9c252fed-30c0-4813-bc20-7e529ea5d1e3" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/QtClient.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/QtClient.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/QtClient.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradlew" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradlew.bat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/settings.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/client/Client.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/client/ServerException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/clioutputmanager/IOManager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/clioutputmanager/Menu.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/keyboard/Keyboard.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/mainapp/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../QtServer/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../QtServer/QtServer.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../QtServer/settings.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../QTClient/.idea/description.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../QTClient/.idea/encodings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../QTClient/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../QTClient/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../QTClient/.idea/project-template.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../QTClient/.idea/workspace.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../QTClient/src/client/Client.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../QTClient/src/client/ServerException.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../QTClient/src/clioutputmanager/IOManager.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../QTClient/src/clioutputmanager/Menu.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../QTClient/src/keyboard/Keyboard.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../QTClient/src/main/Main.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../QtServer/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../QtServer/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/QtClient.jar" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../QtServer/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../QtServer/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../QtServer/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/../QtServer/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../QtServer/map-lab.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../QtServer/QtServer.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../QtServer/src/main/java/database/Example.java" beforeDir="false" afterPath="$PROJECT_DIR$/../QtServer/src/main/java/database/Example.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../QtServer/src/main/java/mainapp/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../QtServer/src/main/java/mainapp/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../QtServer/src/main/java/mining/Cluster.java" beforeDir="false" afterPath="$PROJECT_DIR$/../QtServer/src/main/java/mining/Cluster.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../QtServer/src/main/java/mining/QTMiner.java" beforeDir="false" afterPath="$PROJECT_DIR$/../QtServer/src/main/java/mining/QTMiner.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../QtServer/src/main/java/server/MultiServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/../QtServer/src/main/java/server/MultiServer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../QtServer/QtServer.jar" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

@@ -2,50 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="85b127a6-d1d2-450b-9fd0-e93079d46af4" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../QtClient/.idea/QtClient.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../QtClient/.idea/gradle.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../QtClient/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../QtClient/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../QtClient/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../QtClient/QtClient.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../QtClient/QtClient.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../QtClient/build.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../QtClient/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../QtClient/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../QtClient/gradlew" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../QtClient/gradlew.bat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../QtClient/settings.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../QtClient/src/main/java/client/Client.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../QtClient/src/main/java/client/ServerException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../QtClient/src/main/java/clioutputmanager/IOManager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../QtClient/src/main/java/clioutputmanager/Menu.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../QtClient/src/main/java/keyboard/Keyboard.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../QtClient/src/main/java/mainapp/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/QtServer.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/settings.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../QTClient/.idea/description.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../QTClient/.idea/encodings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../QTClient/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../QTClient/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../QTClient/.idea/project-template.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../QTClient/.idea/workspace.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../QTClient/src/client/Client.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../QTClient/src/client/ServerException.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../QTClient/src/clioutputmanager/IOManager.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../QTClient/src/clioutputmanager/Menu.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../QTClient/src/keyboard/Keyboard.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../QTClient/src/main/Main.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/map-lab.iml" beforeDir="false" afterPath="$PROJECT_DIR$/QtServer.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/database/Example.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/database/Example.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/mainapp/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mainapp/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/mining/Cluster.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mining/Cluster.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/mining/QTMiner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mining/QTMiner.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/server/MultiServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/server/MultiServer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/QtServer.jar" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -294,30 +251,30 @@
     </state>
     <state x="1064" y="393" key="#com.intellij.ide.util.TreeClassChooserDialog/1920.0.1920.1080/0.28.1920.1052@0.28.1920.1052" timestamp="1585155342906" />
     <state x="2984" y="375" key="#com.intellij.ide.util.TreeClassChooserDialog/1920.0.1920.1080/0.28.1920.1052@1920.0.1920.1080" timestamp="1585318879272" />
-    <state x="2664" y="314" key="FileChooserDialogImpl" timestamp="1585319943891">
+    <state x="2664" y="314" key="FileChooserDialogImpl" timestamp="1585324078450">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
-    <state x="2664" y="314" key="FileChooserDialogImpl/1920.0.1920.1080/0.28.1920.1052@1920.0.1920.1080" timestamp="1585319943891" />
-    <state width="1874" height="424" key="GridCell.Tab.0.bottom" timestamp="1585323621626">
+    <state x="2664" y="314" key="FileChooserDialogImpl/1920.0.1920.1080/0.28.1920.1052@1920.0.1920.1080" timestamp="1585324078450" />
+    <state width="1874" height="424" key="GridCell.Tab.0.bottom" timestamp="1585324080168">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
     <state width="1874" height="798" key="GridCell.Tab.0.bottom/1920.0.1920.1080/0.28.1920.1052@0.28.1920.1052" timestamp="1585155509943" />
-    <state width="1874" height="424" key="GridCell.Tab.0.bottom/1920.0.1920.1080/0.28.1920.1052@1920.0.1920.1080" timestamp="1585323621626" />
-    <state width="1874" height="424" key="GridCell.Tab.0.center" timestamp="1585323621626">
+    <state width="1874" height="424" key="GridCell.Tab.0.bottom/1920.0.1920.1080/0.28.1920.1052@1920.0.1920.1080" timestamp="1585324080168" />
+    <state width="1874" height="424" key="GridCell.Tab.0.center" timestamp="1585324080168">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
     <state width="1874" height="798" key="GridCell.Tab.0.center/1920.0.1920.1080/0.28.1920.1052@0.28.1920.1052" timestamp="1585155509943" />
-    <state width="1874" height="424" key="GridCell.Tab.0.center/1920.0.1920.1080/0.28.1920.1052@1920.0.1920.1080" timestamp="1585323621626" />
-    <state width="1874" height="424" key="GridCell.Tab.0.left" timestamp="1585323621625">
+    <state width="1874" height="424" key="GridCell.Tab.0.center/1920.0.1920.1080/0.28.1920.1052@1920.0.1920.1080" timestamp="1585324080168" />
+    <state width="1874" height="424" key="GridCell.Tab.0.left" timestamp="1585324080168">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
     <state width="1874" height="798" key="GridCell.Tab.0.left/1920.0.1920.1080/0.28.1920.1052@0.28.1920.1052" timestamp="1585155509943" />
-    <state width="1874" height="424" key="GridCell.Tab.0.left/1920.0.1920.1080/0.28.1920.1052@1920.0.1920.1080" timestamp="1585323621625" />
-    <state width="1874" height="424" key="GridCell.Tab.0.right" timestamp="1585323621626">
+    <state width="1874" height="424" key="GridCell.Tab.0.left/1920.0.1920.1080/0.28.1920.1052@1920.0.1920.1080" timestamp="1585324080168" />
+    <state width="1874" height="424" key="GridCell.Tab.0.right" timestamp="1585324080168">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
     <state width="1874" height="798" key="GridCell.Tab.0.right/1920.0.1920.1080/0.28.1920.1052@0.28.1920.1052" timestamp="1585155509943" />
-    <state width="1874" height="424" key="GridCell.Tab.0.right/1920.0.1920.1080/0.28.1920.1052@1920.0.1920.1080" timestamp="1585323621626" />
+    <state width="1874" height="424" key="GridCell.Tab.0.right/1920.0.1920.1080/0.28.1920.1052@1920.0.1920.1080" timestamp="1585324080168" />
     <state x="782" y="421" key="com.intellij.ide.util.TipDialog" timestamp="1585316188935">
       <screen x="0" y="28" width="1920" height="1052" />
     </state>
