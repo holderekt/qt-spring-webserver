@@ -2,6 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="85b127a6-d1d2-450b-9fd0-e93079d46af4" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Documentazione/documentazione.tex" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Estensione/QtWebServer/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/QtServer/.idea/map-lab.iml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/QtServer/.idea/workspace.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/QtServer/build.gradle" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/QtServer/map-lab.iml" afterDir="false" />
@@ -23,7 +26,7 @@
       <change beforePath="$PROJECT_DIR$/gradlew.bat" beforeDir="false" afterPath="$PROJECT_DIR$/QtServer/gradlew.bat" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/mysql-connector-java-8.0.16.jar" beforeDir="false" afterPath="$PROJECT_DIR$/QtServer/lib/mysql-connector-java-8.0.16.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/map-client.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/map-lab.iml" beforeDir="false" afterPath="$PROJECT_DIR$/QtServer/.idea/map-lab.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/map-lab.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Estensione/QtWebServer/SpringMavenTest.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/data/Attribute.java" beforeDir="false" afterPath="$PROJECT_DIR$/QtServer/src/main/java/data/Attribute.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/data/ContinuousAttribute.java" beforeDir="false" afterPath="$PROJECT_DIR$/QtServer/src/main/java/data/ContinuousAttribute.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/data/ContinuousItem.java" beforeDir="false" afterPath="$PROJECT_DIR$/QtServer/src/main/java/data/ContinuousItem.java" afterDir="false" />
@@ -116,8 +119,11 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/Estensione/QtWebServer" />
+      <recent name="$PROJECT_DIR$/Documentazione" />
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/QTClient" />
       <recent name="$PROJECT_DIR$/QtServer" />
-      <recent name="$PROJECT_DIR$/src/main/java" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/database" />
