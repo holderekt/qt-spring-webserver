@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <bytecodeTargetLevel>
+      <module name="gradle-example.dependencies" target="1.8" />
+      <module name="gradle-example.jar" target="1.8" />
+      <module name="gradle-example.main" target="1.8" />
+      <module name="gradle-example.test" target="1.8" />
+      <module name="QtClient.dependencies" target="1.8" />
+      <module name="QtClient.jar" target="1.8" />
+      <module name="QtClient.main" target="1.8" />
+      <module name="QtClient.test" target="1.8" />
+      <module name="QtServer.dependencies" target="1.8" />
+      <module name="QtServer.jar" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

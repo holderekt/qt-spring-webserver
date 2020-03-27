@@ -97,7 +97,7 @@ public class QTMiner {
      *
      * @param data Insieme di tuple
      * @return Numero di cluster trovati
-     * @throws ClusteringRadiusException Numero di cluster trovati é <= 1
+     * @throws ClusteringRadiusException Numero di cluster trovati é minore o uguale a 1
      * @throws EmptyDatasetException Dataset vuoto
      */
     public int compute(Data data)throws ClusteringRadiusException, EmptyDatasetException {

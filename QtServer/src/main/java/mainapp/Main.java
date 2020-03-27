@@ -1,4 +1,4 @@
-package main;
+package mainapp;
 
 import server.MultiServer;
 
@@ -17,6 +17,5 @@ public class Main {
         }else{
             new MultiServer();
         }
-
     }
 }

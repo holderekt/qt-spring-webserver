@@ -2,9 +2,11 @@
 .gradle
 
 # Ignore Gradle build output directory
-build
-/bin/
-out
+QtServer/build
+QtServer/out
+
+QtClient/build
+QtClient/out
 
 *.dmp
 *.txt

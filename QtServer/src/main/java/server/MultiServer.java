@@ -23,6 +23,7 @@ public class MultiServer {
      * Costruttore del server con numero di porta fornito come parametro
      *
      * @param port Porta del server
+     * @throws IOException Errore nell'avvio del server
      */
     public MultiServer(int port) throws IOException {
 
@@ -32,13 +33,14 @@ public class MultiServer {
         }else{
             System.out.println("Server started on DEFAULT PORT 8080");
         }
-
         run();
     }
 
 
     /**
      * Costruttore del server con numero di porta di default
+     *
+     * @throws IOException Errore nell'avvio del server
      */
     public MultiServer() throws  IOException{
         run();
