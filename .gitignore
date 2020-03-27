@@ -8,5 +8,7 @@ QtServer/out
 QtClient/build
 QtClient/out
 
+Estensione/QtWebServer/target
+
 *.dmp
 *.txt
