@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="9c252fed-30c0-4813-bc20-7e529ea5d1e3" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/QtClient.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/QtClient.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/QtClient.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gradlew" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gradlew.bat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/settings.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/client/Client.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/client/ServerException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/clioutputmanager/IOManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/clioutputmanager/Menu.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/keyboard/Keyboard.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/mainapp/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../QtServer/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../QtServer/QtServer.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../QtServer/settings.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../QTClient/.idea/description.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../QTClient/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../QTClient/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../QTClient/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../QTClient/.idea/project-template.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../QTClient/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../QTClient/src/client/Client.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../QTClient/src/client/ServerException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../QTClient/src/clioutputmanager/IOManager.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../QTClient/src/clioutputmanager/Menu.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../QTClient/src/keyboard/Keyboard.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../QTClient/src/main/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../QtServer/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../QtServer/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../QtServer/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../QtServer/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../QtServer/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/../QtServer/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../QtServer/map-lab.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../QtServer/QtServer.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../QtServer/src/main/java/database/Example.java" beforeDir="false" afterPath="$PROJECT_DIR$/../QtServer/src/main/java/database/Example.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../QtServer/src/main/java/mainapp/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../QtServer/src/main/java/mainapp/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../QtServer/src/main/java/mining/Cluster.java" beforeDir="false" afterPath="$PROJECT_DIR$/../QtServer/src/main/java/mining/Cluster.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../QtServer/src/main/java/mining/QTMiner.java" beforeDir="false" afterPath="$PROJECT_DIR$/../QtServer/src/main/java/mining/QTMiner.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../QtServer/src/main/java/server/MultiServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/../QtServer/src/main/java/server/MultiServer.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <projects_view>
+          <tree_state>
+            <expand />
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectId" id="1ZiRUoBU4K0luAvjqbkiwmjxURe" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/java" />
+      <recent name="$PROJECT_DIR$/src/main" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="QtClient [jar]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="jar" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>true</GradleScriptDebugEnabled>
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Gradle.QtClient [jar]" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="9c252fed-30c0-4813-bc20-7e529ea5d1e3" name="Default Changelist" comment="" />
+      <created>1585319945707</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1585319945707</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="810" y="447" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog" timestamp="1585320014980">
+      <screen x="0" y="28" width="1920" height="1052" />
+    </state>
+    <state x="810" y="447" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog/1920.0.1920.1080/0.28.1920.1052@0.28.1920.1052" timestamp="1585320014980" />
+    <state x="2551" y="484" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog" timestamp="1585322593654">
+      <screen x="1920" y="0" width="1920" height="1080" />
+    </state>
+    <state x="2551" y="484" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog/1920.0.1920.1080/0.28.1920.1052@1920.0.1920.1080" timestamp="1585322593654" />
+    <state x="2669" y="439" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.packages" timestamp="1585322597146">
+      <screen x="1920" y="0" width="1920" height="1080" />
+    </state>
+    <state x="2669" y="439" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.packages/1920.0.1920.1080/0.28.1920.1052@1920.0.1920.1080" timestamp="1585322597146" />
+    <state width="1874" height="287" key="GridCell.Tab.0.bottom" timestamp="1585323560915">
+      <screen x="1920" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1874" height="287" key="GridCell.Tab.0.bottom/1920.0.1920.1080/0.28.1920.1052@1920.0.1920.1080" timestamp="1585323560915" />
+    <state width="1874" height="287" key="GridCell.Tab.0.center" timestamp="1585323560909">
+      <screen x="1920" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1874" height="287" key="GridCell.Tab.0.center/1920.0.1920.1080/0.28.1920.1052@1920.0.1920.1080" timestamp="1585323560909" />
+    <state width="1874" height="287" key="GridCell.Tab.0.left" timestamp="1585323560909">
+      <screen x="1920" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1874" height="287" key="GridCell.Tab.0.left/1920.0.1920.1080/0.28.1920.1052@1920.0.1920.1080" timestamp="1585323560909" />
+    <state width="1874" height="287" key="GridCell.Tab.0.right" timestamp="1585323560915">
+      <screen x="1920" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1874" height="287" key="GridCell.Tab.0.right/1920.0.1920.1080/0.28.1920.1052@1920.0.1920.1080" timestamp="1585323560915" />
+  </component>
+</project>

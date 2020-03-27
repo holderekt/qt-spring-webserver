@@ -1,0 +1,29 @@
+apply plugin: 'java'
+apply plugin: 'java-library'
+apply plugin: 'application'
+
+mainClassName = 'mainapp.Main'
+
+sourceSets {
+    main {
+        java {
+            srcDir 'src/main/java'
+        }
+    }
+
+    test {
+        java {
+            srcDir 'src/main/test'
+        }
+    }
+}
+
+jar {
+    manifest {
+        attributes ('Main-Class': 'mainapp.Main')
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'lib')
+}

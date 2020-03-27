@@ -36,7 +36,7 @@ public class Example implements Comparable<Example>{
 	 * Confonta l'example corrente con l'example in input
 	 *
 	 * @param ex Example da confrontare
-	 * @return 0 se uguali, intero positivo se this.example > example, negativo se this.example < example
+	 * @return 0 se uguali, intero positivo se this.example maggiore di example, negativo se this.example minore di example
 	 */
 	public int compareTo(Example ex) {
 		
