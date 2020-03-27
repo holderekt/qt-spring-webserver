@@ -1,0 +1,112 @@
+\documentclass{article}
+
+\title{Quality Threshold Clusteing}
+\date{20-03-2020}
+\author{Ivan Diliso Matricola: 676366}
+
+\begin{document}
+    \maketitle
+    \section{Introduzione}
+    Il software \textbf{Qt-Clustering} realizzato in Java permette di applicare 
+    l'algoritmo di cluster Quality Threshold ad un insieme di dati estratti da 
+    un database MySQL. 
+
+    \paragraph{Quality Threshold} 
+    Algoritmo alternatico per partizionare i dati. Richiede piu' potenza di
+    calcolo rispetto a K-Means ma non richiede di specificare il numero di
+    cluster a priori, e restituisce sempre lo stessorisultato quando si ripete
+    diverse volte.
+ 
+    \section{Applicazione principale}
+    L'applicazine e' divisa in due componenti principali
+        \subsection{Server}
+        Il server si occupa di eseguire le richieste di uno o piu client
+        fornendo ad essi le seguenti funzionalita:
+            \begin{itemize}
+                \item Caricare una tabella dal database specificandone il nome
+                \item Eseguire il clustering dei dati caricati con un raggio
+                specificato dall'utente
+                \item Visualizzare i dati e il risultato del clustering
+                \item Salvare il risultato del clustering su file
+                \item Caricare i dati del clustering da file
+            \end{itemize}
+        
+        
+        \subsection{Client}
+        Il client si occupa di gestire una interaccia utente basata su linea di 
+        comando che permette all'utente di:
+            \begin{itemize}
+                \item Connettersi al server specificando una porta (valore di 
+                default 8080)
+                \item Chiedere al server di eseguire una nuova operazione di
+                clustering specificando nome della tabella e raggio
+                \item Caricare un clustering salvato su file specificando il
+                \item nome del file
+            \end{itemize}
+
+
+    \section{Estensione}
+    L'estenzione del progetto consiste su una Web Application basata sul
+    framework Spring Boot, che permette di creare applicazioni web basate sul
+    pattern architetturale MVC (Model View Controller). 
+    L'applicazione e' basata sull'utilizzo di servlet per servire le pagine web,
+    non sara' piu' presente dunque un modello client server basato su socket ma 
+    il client sara' rappresentato da una pagina web che si interfaccera con il
+    server per l'esecuzione del clustering, il caricamento dei dati dal database 
+    e il trasferimento dei dati.
+
+        \paragraph{Servlet}
+        Oggeto scritto in linguaggio Java che opera all'interno di
+        un server web permettendo quindi la creazine di applicazioni web.
+    
+        \subsection{Web Server}
+        E' stata utilizzata una versione che opera tramite il web server e 
+        servlet container Tomcat embedded all'interno dell'applicazione. 
+        In questo modo non ci sara' bisogno di avviare il web server Tomcat ma 
+        bastera' avviare il WAR (Web Application Resource) del server per 
+        avviare sia il web server, sia la web application
+
+        \subsection{Libreria JSON}
+        Per servire i dati del database e i risultati del clustering sono state
+        create delle classi per la costruzione di file JSON. La libreria
+        presenta una struttura ad albero per rappresentare i dati.
+
+        \subsection{Frontend}
+        Il frontend e' stato realizzato in HTML/CSS e presenta delle funzoni 
+        in Javascript per trasformare i dati JSON forniti dal server in tabelle
+        HTML. E' stata utilizzata la libreria BOOTSTRAP per omoloagare la 
+        grafica delle pagine web e fornire dei siti web responsive
+
+    \newpage
+    \section{Installazione}
+    Questi passaggi sono validi sia per il progetto base sia per il progetto con
+    estensione.
+    Sia il client sia il server necessitano l'installazione dei sequenti
+    software:
+        \begin{itemize}
+            \item MySQL
+            \item Java Runtime Envrioment 8.0
+        \end{itemize}
+
+        \subsection{Server}
+            \begin{enumerate}
+                \item Accertarsi che il server MySQL sia attivo sulla propria
+                macchina
+                \item Eseguire il file SQL databasesetup.sql tramite il comando 
+                <TODO HERE>
+            \end{enumerate}
+
+        \subsection{Client}
+        Il client sia nel progetto base sia nel progetto con estensione non
+        richiedono particolari passaggi per l'installazione
+    
+    \section{Manuale Utente}
+
+
+
+
+    
+
+
+
+\end{document}

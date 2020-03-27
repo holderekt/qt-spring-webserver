@@ -1,0 +1,40 @@
+body {
+    background: url("/resources/images/image.jpg") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+    padding-top : 65px;
+    padding-bottom: 20px;
+}
+
+.col-md-whiteblock{
+    text-align: center;
+    padding : 50px;
+    border-radius: 25px;
+    background-color: #ffffff
+}
+
+.col-sm-custom{
+    text-align: center;
+    vertical-align: top;
+    padding : 50px;
+    border-radius: 25px;
+}
+
+
+.vertical-center {
+    min-height: 100%;
+    min-height: 100vh;
+
+    display: flex;
+    align-items: center;
+}
+
+.row-md{
+    text-align: center;
+}
+
+.align-top{
+    vertical-align: top;
+}
