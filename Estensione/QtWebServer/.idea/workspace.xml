@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bb4388ad-bcd3-4277-bc40-d88bd01dde4b" name="Default Changelist" comment="">
+<<<<<<< HEAD
       <change afterPath="$PROJECT_DIR$/build/docs/javadoc/allclasses-index.html" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/build/docs/javadoc/allclasses.html" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/build/docs/javadoc/allpackages-index.html" afterDir="false" />
@@ -106,6 +107,216 @@
       <change beforePath="$PROJECT_DIR$/src/main/java/mining/QTMiner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mining/QTMiner.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/webserver/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/webserver/Application.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/webserver/DatabaseClusteringInputController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/webserver/DatabaseClusteringInputController.java" afterDir="false" />
+=======
+      <change afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/bootScripts/QtWebServer" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/bootScripts/QtWebServer.bat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/data/Attribute.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/data/ContinuousAttribute.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/data/ContinuousItem.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/data/Data.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/data/DiscreteAttribute.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/data/DiscreteItem.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/data/EmptyDatasetException.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/data/Item.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/data/Tuple.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/database/DatabaseConnectionException.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/database/DbAccess.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/database/EmptyTypeException.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/database/Example.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/database/NoValueException.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/database/QUERY_TYPE.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/database/TableData.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/database/TableSchema$Column.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/database/TableSchema.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/json/JSONArray.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/json/JSONItem.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/json/JSONKeyItem.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/json/JSONObject.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/json/JSONString.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/json/JSONTuple.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/json/JSONUtils.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/json/JSONValue.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/json/JSONWrongSyntaxException.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/json/JSONWrongTypeException.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/jsonconverter/JSONConverter.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/mining/Cluster.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/mining/ClusterSet.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/mining/ClusteringRadiusException.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/mining/QTMiner.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/webserver/Application.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/webserver/DatabaseClusteringInputController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/webserver/WebErrorController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/distributions/QtWebServer-boot.tar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/distributions/QtWebServer-boot.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/libs/QtWebServer-0.1.0.war" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/libs/QtWebServer.war" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/tmp/bootWar/MANIFEST.MF" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gradlew" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gradlew.bat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/data/Attribute.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/data/ContinuousAttribute.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/data/ContinuousItem.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/data/Data.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/data/DiscreteAttribute.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/data/DiscreteItem.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/data/EmptyDatasetException.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/data/Item.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/data/Tuple.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/database/DatabaseConnectionException.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/database/DbAccess.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/database/EmptyTypeException.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/database/Example.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/database/NoValueException.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/database/QUERY_TYPE.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/database/TableData.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/database/TableSchema$Column.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/database/TableSchema.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/json/JSONArray.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/json/JSONItem.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/json/JSONKeyItem.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/json/JSONObject.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/json/JSONString.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/json/JSONTuple.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/json/JSONUtils.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/json/JSONValue.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/json/JSONWrongSyntaxException.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/json/JSONWrongTypeException.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/jsonconverter/JSONConverter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/mining/Cluster.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/mining/ClusterSet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/mining/ClusteringRadiusException.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/mining/QTMiner.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/webserver/Application.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/webserver/DatabaseClusteringInputController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/webserver/WebErrorController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/jsp-boot-tst.war" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/jsp-boot-tst.war.original" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/jsp-boot-tst/WEB-INF/appconfig-mvc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/jsp-boot-tst/WEB-INF/classes/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/jsp-boot-tst/WEB-INF/classes/data/Attribute.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/jsp-boot-tst/WEB-INF/classes/data/ContinuousAttribute.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/jsp-boot-tst/WEB-INF/classes/data/ContinuousItem.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/jsp-boot-tst/WEB-INF/classes/data/Data.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/jsp-boot-tst/WEB-INF/classes/data/DiscreteAttribute.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/jsp-boot-tst/WEB-INF/classes/data/DiscreteItem.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/jsp-boot-tst/WEB-INF/classes/data/EmptyDatasetException.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/jsp-boot-tst/WEB-INF/classes/data/Item.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/jsp-boot-tst/WEB-INF/classes/data/Tuple.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/jsp-boot-tst/WEB-INF/classes/database/DatabaseConnectionException.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/jsp-boot-tst/WEB-INF/classes/database/DbAccess.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/jsp-boot-tst/WEB-INF/classes/database/EmptyTypeException.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/jsp-boot-tst/WEB-INF/classes/database/Example.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/jsp-boot-tst/WEB-INF/classes/database/NoValueException.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/jsp-boot-tst/WEB-INF/classes/database/QUERY_TYPE.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/jsp-boot-tst/WEB-INF/classes/database/TableData.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/jsp-boot-tst/WEB-INF/classes/database/TableSchema$Column.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/jsp-boot-tst/WEB-INF/classes/database/TableSchema.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/jsp-boot-tst/WEB-INF/classes/json/JSONArray.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/jsp-boot-tst/WEB-INF/classes/json/JSONItem.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/jsp-boot-tst/WEB-INF/classes/json/JSONKeyItem.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/jsp-boot-tst/WEB-INF/classes/json/JSONObject.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/jsp-boot-tst/WEB-INF/classes/json/JSONString.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/jsp-boot-tst/WEB-INF/classes/json/JSONTuple.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/jsp-boot-tst/WEB-INF/classes/json/JSONUtils.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/jsp-boot-tst/WEB-INF/classes/json/JSONValue.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/jsp-boot-tst/WEB-INF/classes/json/JSONWrongSyntaxException.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/jsp-boot-tst/WEB-INF/classes/json/JSONWrongTypeException.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/jsp-boot-tst/WEB-INF/classes/jsonconverter/JSONConverter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/jsp-boot-tst/WEB-INF/classes/mining/Cluster.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/jsp-boot-tst/WEB-INF/classes/mining/ClusterSet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/jsp-boot-tst/WEB-INF/classes/mining/ClusteringRadiusException.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/jsp-boot-tst/WEB-INF/classes/mining/QTMiner.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/jsp-boot-tst/WEB-INF/classes/webserver/Application.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/jsp-boot-tst/WEB-INF/classes/webserver/DatabaseClusteringInputController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/jsp-boot-tst/WEB-INF/classes/webserver/WebErrorController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/jsp-boot-tst/WEB-INF/jsp/database_cluster.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/jsp-boot-tst/WEB-INF/jsp/database_result.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/jsp-boot-tst/WEB-INF/jsp/errorpage.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/jsp-boot-tst/WEB-INF/jsp/file_cluster.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/jsp-boot-tst/WEB-INF/jsp/file_result.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/jsp-boot-tst/WEB-INF/jsp/index.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/jsp-boot-tst/WEB-INF/jsp/save_cluster.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/jsp-boot-tst/WEB-INF/jsp/success.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/jsp-boot-tst/WEB-INF/lib/classmate-1.3.4.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/jsp-boot-tst/WEB-INF/lib/hibernate-validator-6.0.11.Final.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/jsp-boot-tst/WEB-INF/lib/jackson-annotations-2.9.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/jsp-boot-tst/WEB-INF/lib/jackson-core-2.9.6.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/jsp-boot-tst/WEB-INF/lib/jackson-databind-2.9.6.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/jsp-boot-tst/WEB-INF/lib/jackson-datatype-jdk8-2.9.6.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/jsp-boot-tst/WEB-INF/lib/jackson-datatype-jsr310-2.9.6.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/jsp-boot-tst/WEB-INF/lib/jackson-module-parameter-names-2.9.6.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/jsp-boot-tst/WEB-INF/lib/javafx.base-11.0.0-SNAPSHOT-linux.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/jsp-boot-tst/WEB-INF/lib/javafx.base-11.0.0-SNAPSHOT-mac.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/jsp-boot-tst/WEB-INF/lib/javafx.base-11.0.0-SNAPSHOT-win.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/jsp-boot-tst/WEB-INF/lib/javafx.base-11.0.0-SNAPSHOT.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/jsp-boot-tst/WEB-INF/lib/javax.annotation-api-1.3.2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/jsp-boot-tst/WEB-INF/lib/jboss-logging-3.3.2.Final.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/jsp-boot-tst/WEB-INF/lib/jstl-1.2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/jsp-boot-tst/WEB-INF/lib/jul-to-slf4j-1.7.25.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/jsp-boot-tst/WEB-INF/lib/log4j-api-2.10.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/jsp-boot-tst/WEB-INF/lib/log4j-to-slf4j-2.10.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/jsp-boot-tst/WEB-INF/lib/logback-classic-1.2.3.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/jsp-boot-tst/WEB-INF/lib/logback-core-1.2.3.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/jsp-boot-tst/WEB-INF/lib/mysql-connector-java-8.0.16.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/jsp-boot-tst/WEB-INF/lib/slf4j-api-1.7.25.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/jsp-boot-tst/WEB-INF/lib/snakeyaml-1.19.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/jsp-boot-tst/WEB-INF/lib/spring-aop-5.0.8.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/jsp-boot-tst/WEB-INF/lib/spring-beans-5.0.8.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/jsp-boot-tst/WEB-INF/lib/spring-boot-2.0.4.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/jsp-boot-tst/WEB-INF/lib/spring-boot-autoconfigure-2.0.4.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/jsp-boot-tst/WEB-INF/lib/spring-boot-starter-2.0.4.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/jsp-boot-tst/WEB-INF/lib/spring-boot-starter-json-2.0.4.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/jsp-boot-tst/WEB-INF/lib/spring-boot-starter-logging-2.0.4.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/jsp-boot-tst/WEB-INF/lib/spring-boot-starter-web-2.0.4.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/jsp-boot-tst/WEB-INF/lib/spring-context-5.0.8.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/jsp-boot-tst/WEB-INF/lib/spring-core-5.0.8.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/jsp-boot-tst/WEB-INF/lib/spring-expression-5.0.8.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/jsp-boot-tst/WEB-INF/lib/spring-jcl-5.0.8.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/jsp-boot-tst/WEB-INF/lib/spring-web-5.0.8.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/jsp-boot-tst/WEB-INF/lib/spring-webmvc-5.0.8.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/jsp-boot-tst/WEB-INF/lib/validation-api-2.0.1.Final.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/jsp-boot-tst/resources/bootstrap/css/bootstrap-grid.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/jsp-boot-tst/resources/bootstrap/css/bootstrap-grid.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/jsp-boot-tst/resources/bootstrap/css/bootstrap-grid.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/jsp-boot-tst/resources/bootstrap/css/bootstrap-grid.min.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/jsp-boot-tst/resources/bootstrap/css/bootstrap-reboot.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/jsp-boot-tst/resources/bootstrap/css/bootstrap-reboot.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/jsp-boot-tst/resources/bootstrap/css/bootstrap-reboot.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/jsp-boot-tst/resources/bootstrap/css/bootstrap-reboot.min.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/jsp-boot-tst/resources/bootstrap/css/bootstrap.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/jsp-boot-tst/resources/bootstrap/css/bootstrap.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/jsp-boot-tst/resources/bootstrap/css/bootstrap.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/jsp-boot-tst/resources/bootstrap/css/bootstrap.min.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/jsp-boot-tst/resources/bootstrap/js/bootstrap.bundle.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/jsp-boot-tst/resources/bootstrap/js/bootstrap.bundle.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/jsp-boot-tst/resources/bootstrap/js/bootstrap.bundle.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/jsp-boot-tst/resources/bootstrap/js/bootstrap.bundle.min.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/jsp-boot-tst/resources/bootstrap/js/bootstrap.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/jsp-boot-tst/resources/bootstrap/js/bootstrap.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/jsp-boot-tst/resources/bootstrap/js/bootstrap.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/jsp-boot-tst/resources/bootstrap/js/bootstrap.min.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/jsp-boot-tst/resources/css/page_configuration.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/jsp-boot-tst/resources/images/image.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/jsp-boot-tst/resources/js/dataset_loader.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../QtClient/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../QtClient/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../QtServer/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../QtServer/.idea/workspace.xml" afterDir="false" />
+>>>>>>> parent of bf1a5e7... deleted build
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
