@@ -138,12 +138,12 @@ public class Cluster implements Iterable<Integer>, Comparable<Cluster>, Serializ
 	/**
 	 * Confronta due cluster
 	 *
-	 * @param integers
+	 * @param cluster Cluster da confrontare
 	 * @return 1 se il cluster corrente é più grande, -1 altrimenti
 	 */
 	@Override
-	public int compareTo(Cluster integers) {
-		return (this.getSize() > integers.getSize() ? 1 : -1);
+	public int compareTo(Cluster cluster) {
+		return (this.getSize() > cluster.getSize() ? 1 : -1);
 	}
 
 	/**

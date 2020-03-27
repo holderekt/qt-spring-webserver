@@ -200,7 +200,7 @@ public class DatabaseClusteringInputController {
      * pagina web contenente il messaggio di errore.
      *
      * @param param_filename Nome del file da caricare
-     * @return
+     * @return model
      */
 
     @RequestMapping(value="/fileresult", params = "filename")
@@ -368,11 +368,15 @@ public class DatabaseClusteringInputController {
      */
 
     @RequestMapping(value="/fileclusterinfo")
-    public @ResponseBody String mapClusterFileInfo()  throws JSONWrongTypeException{
+    public @ResponseBody String mapClusterFileInfo() {
 
         if(miner != null && miner.isLoadedFromFile()){
-            return JSONConverter.convert(miner.getCentroids());
 
+            try{
+                return JSONConverter.convert(miner.getCentroids());
+            }catch (JSONWrongTypeException e){
+                return null;
+            }
         }else{
             return null;
         }

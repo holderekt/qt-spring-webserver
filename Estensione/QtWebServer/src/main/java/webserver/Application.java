@@ -17,7 +17,7 @@ public class Application {
 
     /**
      * Esecuzione della main application di Spring Boot
-     * @param args
+     * @param args Argomenti in input
      */
 
     public static void main(String[] args) {
