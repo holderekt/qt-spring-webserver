@@ -1,7 +1,7 @@
 # Fdb version 3
-["pdflatex"] 1585400435 "/home/navis/workspace/qt-clustering-map/Documentazione/documentazione.tex" "/home/navis/workspace/qt-clustering-map/Documentazione/documentazione.pdf" "documentazione" 1585400436
-  "/home/navis/workspace/qt-clustering-map/Documentazione/documentazione.aux" 1585400436 5883 9190ba6895cfce69d1e19e064bf8d66b ""
-  "/home/navis/workspace/qt-clustering-map/Documentazione/documentazione.tex" 1585400435 10910 979c41142cf09bdc43ae32b6d91972c5 ""
+["pdflatex"] 1585401119 "/home/navis/workspace/qt-clustering-map/Documentazione/documentazione.tex" "/home/navis/workspace/qt-clustering-map/Documentazione/documentazione.pdf" "documentazione" 1585401120
+  "/home/navis/workspace/qt-clustering-map/Documentazione/documentazione.aux" 1585401120 5883 9190ba6895cfce69d1e19e064bf8d66b ""
+  "/home/navis/workspace/qt-clustering-map/Documentazione/documentazione.tex" 1585401119 10941 438cfcbaf2b3c7299fba93526f75ce30 ""
   "/usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc" 1572595918 2900 1537cc8184ad1792082cd229ecc269f4 ""
   "/usr/share/texmf-dist/fonts/map/fontname/texfonts.map" 1572595918 3332 103109f5612ad95229751940c61aada0 ""
   "/usr/share/texmf-dist/fonts/tfm/jknappen/ec/tcrm1000.tfm" 1572595918 1536 e07581a4bb3136ece9eeb4c3ffab8233 ""
@@ -70,13 +70,13 @@
   "Images/BASE2.png" 1585393719 21653 554702ca64929b0bee789b39ae789d2b ""
   "Images/BASE4.png" 1585393803 5817 85f576f35a13792d10c0703f9405094c ""
   "Images/BASE5.png" 1585393860 10931 5a60276f47c7dfcaa9995567d6ae1e1b ""
-  "documentazione.aux" 1585400436 5883 9190ba6895cfce69d1e19e064bf8d66b "pdflatex"
-  "documentazione.tex" 1585400435 10910 979c41142cf09bdc43ae32b6d91972c5 ""
-  "documentazione.toc" 1585400436 1541 d60d061604d3e7aa399e875726d63da4 "pdflatex"
+  "documentazione.aux" 1585401120 5883 9190ba6895cfce69d1e19e064bf8d66b "pdflatex"
+  "documentazione.tex" 1585401119 10941 438cfcbaf2b3c7299fba93526f75ce30 ""
+  "documentazione.toc" 1585401120 1541 d60d061604d3e7aa399e875726d63da4 "pdflatex"
   (generated)
   "/home/navis/workspace/qt-clustering-map/Documentazione/documentazione.log"
-  "documentazione.log"
   "documentazione.aux"
   "documentazione.toc"
   "documentazione.pdf"
+  "documentazione.log"
   "/home/navis/workspace/qt-clustering-map/Documentazione/documentazione.pdf"
