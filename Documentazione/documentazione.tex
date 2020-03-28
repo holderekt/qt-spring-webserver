@@ -1,11 +1,23 @@
 \documentclass{article}
+\usepackage{float}
+\usepackage{graphicx}
+\usepackage{caption}
+\usepackage{placeins}
+\usepackage{textcomp}
 
 \title{Quality Threshold Clusteing}
 \date{20-03-2020}
 \author{Ivan Diliso Matricola: 676366}
 
+\graphicspath{ {./Images/} }
+\captionsetup{justification=raggedright,singlelinecheck=false}
+
+
 \begin{document}
+    
     \maketitle
+    \tableofcontents
+    \newpage
     \section{Introduzione}
     Il software \textbf{Qt-Clustering} realizzato in Java permette di applicare 
     l'algoritmo di cluster Quality Threshold ad un insieme di dati estratti da 
@@ -39,9 +51,10 @@
                 \item Connettersi al server specificando una porta (valore di 
                 default 8080)
                 \item Chiedere al server di eseguire una nuova operazione di
-                clustering specificando nome della tabella e raggio
+                clustering specificando nome della tabella, raggio e io nome del
+                file dove salvare i risultati
                 \item Caricare un clustering salvato su file specificando il
-                \item nome del file
+                nome del file
             \end{itemize}
 
 
@@ -77,6 +90,11 @@
         HTML. E' stata utilizzata la libreria BOOTSTRAP per omoloagare la 
         grafica delle pagine web e fornire dei siti web responsive
 
+
+
+
+
+
     \newpage
     \section{Installazione}
     Questi passaggi sono validi sia per il progetto base sia per il progetto con
@@ -92,8 +110,11 @@
             \begin{enumerate}
                 \item Accertarsi che il server MySQL sia attivo sulla propria
                 macchina
-                \item Eseguire il file SQL databasesetup.sql tramite il comando 
-                <TODO HERE>
+                \item Eseguire il file SQL databasesetup.sql tramite il comando:
+                    \\\\
+                    \verb|mysql -u root -p < databasesetup.sql|
+                
+                
             \end{enumerate}
 
         \subsection{Client}
@@ -101,7 +122,160 @@
         richiedono particolari passaggi per l'installazione
     
     \section{Manuale Utente}
+        
+            \subsection{Client}
+            Avviare il client facendo doppio click sul file 
+            \verb|Client.bat| in questo caso verranno utilizzati indirizzo
+            IP e porta di default (localhost:8080). Per specificare un
+            diverso indirizzo ip e port usare il comando: \\\\
+            \verb|QtClient.bat <ip> <porta>|
 
+            \subsection{Server}
+            Avviare il server facendo doppio click sul file 
+            \verb|Server.bat| in questo caso verra' utilizzata la porta di
+            default (8080). Per specificare una diversa porta 
+            usare il comando: \\\\
+            \verb|QtServer.bat <porta>|\\\\
+            I file creati dal server verranno salvati nella stessa cartella
+            in cui e' contenuto il file bat
+            
+            \subsection{Server Estensione}
+            Avviare il server facendo doppio click sul file 
+            \verb|WebServer.bat| in questo caso verra' utilizzata la porta di
+            default (8080). Per specificare una diversa porta 
+            usare il comando: \\\\
+            \verb|QtWebServer.bat <porta>|\\\\
+            I file creati dal server verranno salvati nella stessa cartella
+            in cui e' contenuto il file bat
+            
+            \subsection{Client Estensione}
+            Accedere al sito web alla pagina: \\\\
+            \verb|https://localhost:8080/index|
+
+
+    \section{Esempi utilizzo}
+            \subsection{Progetto Base}
+    In tutte le immagini le parole in verde sono input forniti dall'utente
+
+        \begin{figure}[!ht]
+            \includegraphics{BASE1}
+            \caption{L'utente sceglie di caricare i risultati del clustering 
+            da file. Prova quindi a caricare un file chiamato "mario" ma il file non
+            e' presente quindi viene visualizzato un errore. All'utente viene
+            chiesto se vuole scegliere una nuova opzione dal menu}   
+            \label{fig:1}
+        \end{figure}
+
+        \begin{figure}[!ht]
+            \includegraphics{BASE2}
+            \caption{L'utente sceglie di effettuare il clustering su tabella su
+            database, inserisce quindi il nome della tabella e il raggio. Nell'
+            immagine viene visualizzato solo uno dei tre cluster forniti in output.}   
+            \label{fig:2}
+        \end{figure}
+
+        \begin{figure}[H]
+            \includegraphics{BASE4}
+            \caption{Dopo aver visualizzato i risultati viene chiesto all'
+            utente di inserire il nome del file in cui salvare i risultati. L'
+            utente puo' decidere di effetuare nuovamente la computazine sulla
+            stessa tabelle fornendo soltanto il raggio.}   
+            \label{fig:3}
+        \end{figure}
+
+
+        \begin{figure}[H]
+            \includegraphics{BASE5}
+            \caption{Scegliendo di caricare i cluster da file e inserendo un 
+            nome di file corretto vengono visualizzati i dati dei cluster.}   
+            \label{fig:4}
+        \end{figure} 
+        \FloatBarrier
+       
+ 
+
+
+
+    \subsection{Estensione}
+    E' stato utilizzato il browser Firefox per le prove di utilizzo della 
+    applicazione web
+
+
+    \begin{figure}[H]
+        \includegraphics[scale=0.4]{ADDON1}
+        \caption{Menu principale, per caricare effettuare il clustering su 
+        database cliccare il pulsante "Database", per caricare i risultati del
+        clustering da file cliccare il pulsante "Server File"}   
+        \label{fig:5}
+    \end{figure} 
+    \begin{figure}[H]
+        \includegraphics[scale=0.4]{ADDON2}
+        \caption{Cliccando il pulsante "Database" si arriva su questa pagina. L'
+        utente ha inserito un raggio e il nome della tabella da caricare dal
+        database }   
+        \label{fig:6}
+    \end{figure} 
+    \begin{figure}[H]
+        \includegraphics[scale=0.3]{ADDON3}
+        \caption{Vengono visualizzati i risultati del clustering. Cliccare su 
+        "Save Data" per salvare i risultati su file}   
+        \label{fig:7}
+    \end{figure} 
+    \begin{figure}[H]
+        \includegraphics[scale=0.4]{ADDON4}
+        \caption{L'utente inserisce il nome del file sul quale salvare i 
+        risultati del clustering}   
+        \label{fig:8}
+    \end{figure} 
+    \begin{figure}[H]
+        \includegraphics[scale=0.4]{ADDON5}
+        \caption{Salvataggio su file avvenuto con successo}   
+        \label{fig:9}
+    \end{figure} 
+    \begin{figure}[H]
+        \includegraphics[scale=0.4]{ADDON6}
+        \caption{Cliccando su "Server File" nel menu principale si arriva 
+        a questa pagina. L'utente inserisce il nome del file dal quale 
+        caricare i dati del clustering}   
+        \label{fig:10}
+    \end{figure} 
+    \begin{figure}[H]
+        \includegraphics[scale=0.4]{ADDON7}
+        \caption{Dati del clustering caricati da file.}   
+        \label{fig:11}
+    \end{figure} 
+    \begin{figure}[H]
+        \includegraphics[scale=0.4]{ADDON8}
+        \caption{Pagina in cui vengono visualizzati eventuali errori del 
+        server. Cliccare sul pulsane "Back to Homepage" per tornare alla 
+        Homepage}   
+        \label{fig:12}
+    \end{figure} 
+
+
+    \section{Note}
+    Nello sviluppo del progetto e' stato utilizzato il software 
+    \textbf{Git} per il controllo di versione e il software 
+    \textbf{Gradle} come sistema di build e gestore delle dipendenze
+        \subsection{Importare il progetto in Eclipse}
+        File $>$ Import $>$ Gradle $>$ Existing Gradle Projet $>$ Next $>$
+        Selezionare la cartella QtClient / QtServer / QtWebServer $>$ Next $>$
+        Finish
+        $>$
+        \subsection{Importare il progetto in IntelliJ  Idea}
+        Import Projct $>$
+         Selezionare la cartella QtClient / QtServer / QtWebServer 
+         $>$
+        Import project from external model $>$ Selezionare Gradle $>$ Finish 
+
+        \subsection{Compilare l'applicazione}
+        Utilizzare il task Gradle "build" per compilare l'applicazione
+
+
+
+
+
+    
 
 
 

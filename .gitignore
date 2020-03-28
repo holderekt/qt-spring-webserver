@@ -4,13 +4,18 @@
 # Ignore Gradle build output directory
 QtServer/build
 QtServer/out
+QtServer/.*
 
 QtClient/build
 QtClient/out
+QtClient/.*
+
 
 
 Estensione/QtWebServer/out
 Estensione/QtWebServer/build
+Estensione/QtWebServer/.*
+
 
 *.dmp
 *.txt

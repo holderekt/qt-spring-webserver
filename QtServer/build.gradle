@@ -24,6 +24,10 @@ jar {
     }
 }
 
+run{
+    standardInput = System.in
+}
+
 dependencies {
     compile fileTree(include: ['*.jar'], dir: 'lib')
 }

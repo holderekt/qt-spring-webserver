@@ -9,10 +9,21 @@ import java.io.IOException;
 
 public class Main {
 
-    public static void main(String[] paramArrayOfString) {
 
-        String IP = paramArrayOfString[0];
-        int PORT = (new Integer(paramArrayOfString[1])).intValue();
+    public static void main(String[] paramArrayOfString) {
+        String DEFAULT_ARG_1 = "localhost";
+        int DEFAULT_ARG_2 = 8080;
+
+        String IP;
+        int  PORT;
+
+        if(paramArrayOfString.length == 2){
+            IP = paramArrayOfString[0];
+            PORT = Integer.parseInt(paramArrayOfString[1]);
+        }else{
+            IP = DEFAULT_ARG_1;
+            PORT = DEFAULT_ARG_2;
+        }
 
         Client client = null;
         try {
