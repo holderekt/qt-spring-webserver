@@ -27,11 +27,10 @@ public class MultiServer {
      */
     public MultiServer(int port) throws IOException {
 
+
         if (port >= MIN_PORT && port <= MAX_PORT){
             this.PORT = port;
             System.out.println("Server started on PORT " + port);
-        }else{
-            System.out.println("Server started on DEFAULT PORT 8080");
         }
         run();
     }
@@ -43,6 +42,7 @@ public class MultiServer {
      * @throws IOException Errore nell'avvio del server
      */
     public MultiServer() throws  IOException{
+        System.out.println("Server started on DEFAULT PORT 8080");
         run();
     }
 
@@ -50,6 +50,7 @@ public class MultiServer {
      * Mainloop del server
      */
     private void run() throws IOException {
+        System.out.println("Server is now active!");
         ServerSocket s = new ServerSocket(PORT);
         try{
             while(true){

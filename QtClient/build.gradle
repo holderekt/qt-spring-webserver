@@ -17,6 +17,10 @@ sourceSets {
     }
 }
 
+run{
+    standardInput = System.in
+}
+
 jar {
     manifest {
         attributes (
