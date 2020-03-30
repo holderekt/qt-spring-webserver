@@ -1,7 +1,6 @@
 package mining;
 
 import data.Data;
-import data.Tuple;
 
 import java.io.Serializable;
 import java.util.*;
