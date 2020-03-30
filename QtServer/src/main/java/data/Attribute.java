@@ -41,14 +41,6 @@ public class Attribute implements Serializable {
     }
 
     /**
-     * Restituisce l'indice dell'attributo
-     * @return index
-     */
-    public int getIndex() {
-        return index;
-    }
-
-    /**
      * Restituisce l'attributo sotto forma di stringa
      * @return name
      */

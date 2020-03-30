@@ -31,14 +31,6 @@ public class DiscreteAttribute extends Attribute implements Iterable<String>, Se
     }
 
     /**
-     * Restituisce il numero di valori consentiti
-     * @return values.size()
-     */
-    public int getNumberOfDistinctValues() {
-        return values.size();
-    }
-
-    /**
      * Restituisce un iteratore per scorrere l'elenco dei valori consentitis
      * @return values.iterator()
      */
