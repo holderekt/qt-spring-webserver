@@ -83,19 +83,5 @@ public class ClusterSet implements Iterable<Cluster>, Serializable  {
         return C.iterator();
     }
 
-    /**
-     * Restituisce i centroidi dell'insieme di cluster
-     *
-     * @return centroids
-     */
-    public List<Tuple> getCentroids(){
-        List<Tuple> centroids = new ArrayList<>();
-
-        for(Cluster c : C){
-            centroids.add(c.getCentroid());
-        }
-
-        return centroids;
-    }
 
 }

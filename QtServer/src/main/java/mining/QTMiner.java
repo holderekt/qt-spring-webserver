@@ -81,14 +81,6 @@ public class QTMiner {
         return C;
     }
 
-    /**
-     * Restituisce se il cluster é stato caricato da file
-     *
-     * @return Vero se caricato da file, falso altrimenti
-     */
-    public boolean isLoadedFromFile() {
-        return loadedFromFile;
-    }
 
     //TODO Completare implementazione
 
@@ -209,12 +201,4 @@ public class QTMiner {
         return C.toString();
     }
 
-    /**
-     * Restituisce l'insieme di centroidi dei cluster trovati
-     *
-     * @return Centroidi dei cluster
-     */
-    public List<Tuple> getCentroids(){
-        return C.getCentroids();
-    }
 }
