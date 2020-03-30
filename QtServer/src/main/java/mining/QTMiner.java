@@ -2,11 +2,9 @@ package mining;
 
 import data.Data;
 import data.EmptyDatasetException;
-import data.Tuple;
 
 import java.io.*;
 import java.util.Iterator;
-import java.util.List;
 
 /**
  *  Tool per l'esecuzione del clustering QT
