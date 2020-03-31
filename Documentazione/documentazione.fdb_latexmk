@@ -1,7 +1,7 @@
 # Fdb version 3
-["pdflatex"] 1585401119 "/home/navis/workspace/qt-clustering-map/Documentazione/documentazione.tex" "/home/navis/workspace/qt-clustering-map/Documentazione/documentazione.pdf" "documentazione" 1585401120
-  "/home/navis/workspace/qt-clustering-map/Documentazione/documentazione.aux" 1585401120 5883 9190ba6895cfce69d1e19e064bf8d66b ""
-  "/home/navis/workspace/qt-clustering-map/Documentazione/documentazione.tex" 1585401119 10941 438cfcbaf2b3c7299fba93526f75ce30 ""
+["pdflatex"] 1585670639 "/home/navis/workspace/qt-clustering-map/Documentazione/documentazione.tex" "/home/navis/workspace/qt-clustering-map/Documentazione/documentazione.pdf" "documentazione" 1585670640
+  "/home/navis/workspace/qt-clustering-map/Documentazione/documentazione.aux" 1585670640 5894 d3271d249fbb34c52aa1ffcf9bc2aaa0 ""
+  "/home/navis/workspace/qt-clustering-map/Documentazione/documentazione.tex" 1585670639 11302 2155c501287cd789a9e96105809f9003 ""
   "/usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc" 1572595918 2900 1537cc8184ad1792082cd229ecc269f4 ""
   "/usr/share/texmf-dist/fonts/map/fontname/texfonts.map" 1572595918 3332 103109f5612ad95229751940c61aada0 ""
   "/usr/share/texmf-dist/fonts/tfm/jknappen/ec/tcrm1000.tfm" 1572595918 1536 e07581a4bb3136ece9eeb4c3ffab8233 ""
@@ -59,7 +59,7 @@
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1585396186 4572998 f9631eebba48c3ee98e5d310044b0a09 ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1585396182 8044939 25db6799996bdab25fc4d6d0daee5680 ""
   "Images/ADDON1.png" 1585398254 417420 7e7061b52c102568fdbdc8ec1a29d11b ""
-  "Images/ADDON2.png" 1585398287 404348 a832909cda8d5b8d8a5f17f415c0ad64 ""
+  "Images/ADDON2.png" 1585670456 406975 d5f0c6a1155a43fc181e79fddd536025 ""
   "Images/ADDON3.png" 1585398306 914044 fffc07e33f3762125b71861c8fe12290 ""
   "Images/ADDON4.png" 1585398330 426301 5d3c36dd604597f46eaa8bdb31ec8c3e ""
   "Images/ADDON5.png" 1585398345 448690 c70b73e63d36e1621684bbc23530cefc ""
@@ -70,9 +70,9 @@
   "Images/BASE2.png" 1585393719 21653 554702ca64929b0bee789b39ae789d2b ""
   "Images/BASE4.png" 1585393803 5817 85f576f35a13792d10c0703f9405094c ""
   "Images/BASE5.png" 1585393860 10931 5a60276f47c7dfcaa9995567d6ae1e1b ""
-  "documentazione.aux" 1585401120 5883 9190ba6895cfce69d1e19e064bf8d66b "pdflatex"
-  "documentazione.tex" 1585401119 10941 438cfcbaf2b3c7299fba93526f75ce30 ""
-  "documentazione.toc" 1585401120 1541 d60d061604d3e7aa399e875726d63da4 "pdflatex"
+  "documentazione.aux" 1585670640 5894 d3271d249fbb34c52aa1ffcf9bc2aaa0 "pdflatex"
+  "documentazione.tex" 1585670639 11302 2155c501287cd789a9e96105809f9003 ""
+  "documentazione.toc" 1585670640 1541 4eb8682ea960c97901c823cb03e0b00f "pdflatex"
   (generated)
   "/home/navis/workspace/qt-clustering-map/Documentazione/documentazione.log"
   "documentazione.aux"
