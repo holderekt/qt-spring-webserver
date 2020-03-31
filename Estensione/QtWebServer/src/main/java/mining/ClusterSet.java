@@ -13,7 +13,6 @@ import java.util.*;
  */
 public class ClusterSet implements Iterable<Cluster>, Serializable  {
 
-    // TODO risolvere questa ambiguità
     /**
      * Insieme di cluster
      */

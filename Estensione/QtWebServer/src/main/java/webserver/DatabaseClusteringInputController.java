@@ -334,7 +334,7 @@ public class DatabaseClusteringInputController {
 
     /**
      * Fornisce il JSON contenente il dataset
-     * @return Dataset
+     * @return Stringa in formato JSON
      */
 
     @RequestMapping(value="/dataset")
@@ -354,7 +354,7 @@ public class DatabaseClusteringInputController {
 
     /**
      * Fornisce il JSON contenente il risultato del clustering
-     * @return ClusterData
+     * @return Stringa in formato JSON
      */
 
     @RequestMapping(value="/clusterdata")
@@ -369,7 +369,7 @@ public class DatabaseClusteringInputController {
 
     /**
      * Fornisce il JSON contenente i centroidi caricati da file
-     * @return DataSet
+     * @return Stringa in formato JSON
      */
 
     @RequestMapping(value="/fileclusterinfo")
@@ -387,7 +387,12 @@ public class DatabaseClusteringInputController {
         }
     }
 
-
+    /**
+     * Fornisce il JSON contenente i nomi di tutte le tabelle contenute nel database
+     * @return Stringa in formato JSON
+     * @throws DatabaseConnectionException Errore connessione al database
+     * @throws SQLException Errore esecuzione query sul database
+     */
     @RequestMapping(value="/tablenames")
     public @ResponseBody String tableNamesView() throws DatabaseConnectionException, SQLException {
         DbAccess db = new DbAccess();
@@ -397,26 +402,5 @@ public class DatabaseClusteringInputController {
 
         return JSONConverter.convert(names.getTableNames());
 
-    }
-
-
-    /**
-     * Fornisce la pagina che visualizza i risultati del clustering su
-     * dati caricati da database. Se non é stata ancora effettuato il
-     * caricamento dei dati e il clustering verrà fornita una pagina
-     * contenente il messaggio di errore.
-     *
-     * @return model
-     */
-
-    @RequestMapping(value="/test")
-    public ModelAndView testing() {
-        ModelAndView model;
-
-
-        model = new ModelAndView("test");
-
-
-        return model;
     }
 }

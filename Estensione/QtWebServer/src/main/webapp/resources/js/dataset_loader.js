@@ -179,7 +179,7 @@ function createClusterInformation(json_location, id) {
 
 		var tr = document.createElement("tr");
 		var td = document.createElement('td');
-		td.appendChild(document.createTextNode("Average distance:  " + obj[cluster]['average_distance']));
+		td.appendChild(document.createTextNode("Average distance:  " + parseFloat(obj[cluster]['averagedistance']).toFixed(4)));
 		td.setAttribute("colspan", obj[cluster]['examples'][0]['l'].length + 1);
 		td.setAttribute("class", "border-bottom small bold");
 		td.setAttribute("style", "background-color: #ffffff")
