@@ -41,10 +41,15 @@
             <h1 class="h6 mb-3 font-weight-normal" align="left">Radius:</h1>
             <input type="number"  step="0.01" min="0" max="100" class="form-control" id="radius" name="radius" placeholder="Enter radius" required>
           </div>
+
+
           <div class="form-group">
             <h1 class="h6 mb-3 font-weight-normal" align="left" >Tablename:</h1>
-            <input type="text" class="form-control" id="tablename" name="tablename" placeholder="Enter table name" required>
+                <select class="mdb-select md-form" id="tablename" name="tablename" >
+                </select>
           </div>
+
+
           <button class="btn btn-lg btn-primary btn-block" type="submit">Calculate</button>
           <p class="mt-5 mb-3 text-muted">Ivan Diliso - 2019</p>
         </form>
@@ -53,4 +58,14 @@
       <div class="col-sm"></div>
     </div>
   </body>
+
+
+    <!-- JS Table loading script -->
+
+    <script src="/resources/js/dataset_loader.js"></script>
+    <script>
+        createTableName("tablenames", "tablename");
+
+    </script>
+
 </html>

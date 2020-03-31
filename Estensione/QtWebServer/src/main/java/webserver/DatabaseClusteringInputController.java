@@ -7,9 +7,7 @@ package webserver;
 
 import data.Data;
 import data.EmptyDatasetException;
-import database.DatabaseConnectionException;
-import database.EmptyTypeException;
-import database.NoValueException;
+import database.*;
 import json.JSONWrongTypeException;
 import jsonconverter.JSONConverter;
 import mining.ClusteringRadiusException;
@@ -78,7 +76,7 @@ public class DatabaseClusteringInputController {
      */
 
     @RequestMapping(value="index")
-    public ModelAndView viewIndex(){
+    public ModelAndView viewIndex()  {
         return new ModelAndView("index");
     }
 
@@ -91,8 +89,12 @@ public class DatabaseClusteringInputController {
 
     @RequestMapping(value="/loaddatabase")
     public ModelAndView viewDatabaseCluster()  {
-       return new ModelAndView("database_cluster");
+
+        return new ModelAndView("database_cluster");
     }
+
+
+
 
     /**
      * Fornisce la pagina web per l'inserimento del nome del file da quale
@@ -166,6 +168,9 @@ public class DatabaseClusteringInputController {
 
             model.addObject("error_message", message);
         }
+
+
+
 
         return model;
     }
@@ -380,5 +385,38 @@ public class DatabaseClusteringInputController {
         }else{
             return null;
         }
+    }
+
+
+    @RequestMapping(value="/tablenames")
+    public @ResponseBody String tableNamesView() throws DatabaseConnectionException, SQLException {
+        DbAccess db = new DbAccess();
+        db.initConnection();
+
+        TableNames names = new TableNames(db);
+
+        return JSONConverter.convert(names.getTableNames());
+
+    }
+
+
+    /**
+     * Fornisce la pagina che visualizza i risultati del clustering su
+     * dati caricati da database. Se non é stata ancora effettuato il
+     * caricamento dei dati e il clustering verrà fornita una pagina
+     * contenente il messaggio di errore.
+     *
+     * @return model
+     */
+
+    @RequestMapping(value="/test")
+    public ModelAndView testing() {
+        ModelAndView model;
+
+
+        model = new ModelAndView("test");
+
+
+        return model;
     }
 }
