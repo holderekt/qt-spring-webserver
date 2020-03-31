@@ -18,6 +18,21 @@ function GetJSONData(string) {
 	return obj;
 }
 
+function createTableName(json_location, id){
+    var obj = GetJSONData(json_location);
+
+    var keys = Object.keys(obj);
+
+    for(var key in obj){
+        var option = document.createElement("option"); // Create the H1 element
+        option.value = obj[key];
+        option.text = obj[key];
+         document.getElementById(id).appendChild(option);
+    }
+
+
+}
+
 
 /*
 	Create table based on dataset type json

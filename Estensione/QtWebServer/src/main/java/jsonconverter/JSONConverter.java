@@ -86,4 +86,15 @@ public class JSONConverter {
         finalobj.addItem(dataobj);
         return finalobj.render();
     }
+
+    public static String convert(String[] data){
+        JSONObject finalobj = new JSONObject();
+        JSONArray array = new JSONArray("data");
+        for(String str : data){
+            array.addItem(new JSONString(str));
+        }
+
+        finalobj.addItem(array);
+        return finalobj.render();
+    }
 }

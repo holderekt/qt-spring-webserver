@@ -1,7 +1,7 @@
 package database;
 
 /**
- * Eccezzione
+ * Eccezione
  * Errore connessione al database
  */
 public class DatabaseConnectionException extends Exception {
