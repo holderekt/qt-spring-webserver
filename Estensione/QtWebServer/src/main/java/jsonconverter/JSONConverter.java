@@ -7,7 +7,17 @@ import mining.ClusterSet;;
 import java.util.Iterator;
 import java.util.List;
 
+/**
+ * Classe utils per la conversione di oggetti per il clustering Qt in oggetti JSON
+ */
 public class JSONConverter {
+
+    /**
+     * Converte un oggetto di tipo Data in una stringa in sintassi JSON
+     * @param data Data da convertire
+     * @return Stringa in sintassi JSON
+     * @throws JSONWrongTypeException Tipo non supportato
+     */
     public static String convert(Data data) throws JSONWrongTypeException {
         JSONObject dataobj = new JSONObject("data");
         for(int i=0; i<data.getSchema().size(); i++){
@@ -22,6 +32,12 @@ public class JSONConverter {
         return finaljson.render();
     }
 
+    /**
+     * Converte un oggetto di tipo ClusterSet in una stringa in sintassi JSON
+     * @param C ClusterSet da convertire
+     * @param data Data per il ritrovamento delle informazioni delle tuple del cluster
+     * @return Stringa in sintassi JSON
+     */
     public static String convert(ClusterSet C, Data data){
 
         JSONObject finalobj = new JSONObject();
@@ -68,6 +84,12 @@ public class JSONConverter {
         return finalobj.render();
     }
 
+    /**
+     * Converte una lista di Tuple in una stringa in sintassi JSON
+     * @param data Tuple da convertire
+     * @return Stringa in sintassi JSON
+     * @throws JSONWrongTypeException Tipo non supportato
+     */
     public static String convert(List<Tuple> data) throws JSONWrongTypeException {
 
         JSONObject finalobj = new JSONObject();
@@ -87,6 +109,11 @@ public class JSONConverter {
         return finalobj.render();
     }
 
+    /**
+     * Converte una lista di stringhe in un array JSON
+     * @param data Insieme di strighe
+     * @return Stringa in sintassi JSON
+     */
     public static String convert(String[] data){
         JSONObject finalobj = new JSONObject();
         JSONArray array = new JSONArray("data");

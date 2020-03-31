@@ -1,4 +1,4 @@
-DROP DATABASE IS EXISTS MapDB;
+DROP DATABASE IF EXISTS MapDB;
 CREATE DATABASE  MapDB;
 CREATE USER IF NOT EXISTS 'MapUser'@'localhost' IDENTIFIED BY 'map';
 GRANT CREATE, SELECT, INSERT, DELETE ON MapDB.* TO MapUser@localhost IDENTIFIED BY 'map';
@@ -24,3 +24,17 @@ insert into MapDB.playtennis values('sunny', 12.5,'normal', 'strong', 'yes' );
 insert into MapDB.playtennis values('overcast',12.5 ,'high', 'strong', 'yes' );
 insert into MapDB.playtennis values('overcast', 29.21,'normal', 'weak', 'yes' );
 insert into MapDB.playtennis values('rain', 12.5,'high', 'strong', 'no' );
+
+
+CREATE TABLE MapDB.testtable(
+    testval1 varchar(10),
+    testval2 float(5,2),
+    testval3 float(5,2),
+    testval4 varchar(10)
+);
+
+insert into MapDB.testtable values ('valore1', 10.5, 16.7, 'test1');
+insert into MapDB.testtable values ('valore2', 89.5, 55.1, 'test2');
+insert into MapDB.testtable values ('valore3', 16.4, 25.7, 'test2');
+insert into MapDB.testtable values ('valore1', 89.4, 18.7, 'test2');
+insert into MapDB.testtable values ('valore2', 80.7, 16.8, 'test1');

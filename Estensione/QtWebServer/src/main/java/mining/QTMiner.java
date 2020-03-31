@@ -90,8 +90,6 @@ public class QTMiner {
         return loadedFromFile;
     }
 
-    //TODO Completare implementazione
-
     /**
      * Effettua il clustering QT su un dataset in input
      *

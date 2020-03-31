@@ -4,12 +4,18 @@ import java.sql.*;
 import java.util.LinkedList;
 import java.util.List;
 
+/**
+ * Contiene i nomi delle tabelle del database
+ */
 public class TableNames{
     /**
      *  Tool accesso al database
      */
     DbAccess db;
 
+    /**
+     * Elenco delle tabelle del database
+     */
     List<String> tableNames = new LinkedList<>();
 
     /**
@@ -28,10 +34,12 @@ public class TableNames{
         while (rs.next()) {
             tableNames.add(rs.getString(3));
         }
-
-        System.out.println(tableNames);
     }
 
+    /**
+     * Restituisce i nomi delle tabelle
+     * @return Array contenente i nomi delle tabelle
+     */
     public String[] getTableNames(){
         return tableNames.stream().toArray(String[]::new);
     }

@@ -1,6 +1,16 @@
 package json;
 
+/**
+ * Utils per gli oggetti JSON
+ */
 public class JSONUtils {
+
+    /**
+     * Fornisce l'oggetto JSON piu appropriato per l'oggetto in ingresso
+     * @param obj Oggetto da trasformare in JSON
+     * @return Versione JSON dell'oggetto in ingresso
+     * @throws JSONWrongTypeException Oggetto in input non supportato
+     */
     public static JSONItem getJsonItem(Object obj) throws JSONWrongTypeException {
         if(obj instanceof String){
             return new JSONString((String) obj);
