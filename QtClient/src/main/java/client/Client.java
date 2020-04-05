@@ -13,7 +13,6 @@ import java.net.Socket;
  * Client per l'esecuzione di clustering QT
  * tramite connessione ad un server
  */
-
 public class Client {
 
 
@@ -57,7 +56,7 @@ public class Client {
     });
 
     /**
-     *  Connessione al server
+     * Connessione al server
      * @param IP Ip del server
      * @param PORT Porta del server
      * @throws IOException Errore nella connessione al server e creazione dei socket

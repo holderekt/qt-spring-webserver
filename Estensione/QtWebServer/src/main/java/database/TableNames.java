@@ -22,6 +22,7 @@ public class TableNames{
      * Costruttore, crea una nuovo TableNames
      *
      * @param db Tool per l'accesso al database
+     * @throws SQLException Errore caricamento nomi tabelle dal database
      */
     public TableNames(DbAccess db) throws SQLException {
 
