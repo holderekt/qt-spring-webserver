@@ -1,7 +1,7 @@
 DROP DATABASE IF EXISTS MapDB;
 CREATE DATABASE  MapDB;
 CREATE USER IF NOT EXISTS 'MapUser'@'localhost' IDENTIFIED BY 'map';
-GRANT CREATE, SELECT, INSERT, DELETE ON MapDB.* TO MapUser@localhost IDENTIFIED BY 'map';
+GRANT CREATE, SELECT, INSERT, DELETE ON MapDB.* TO MapUser@localhost;
 CREATE TABLE MapDB.playtennis(
     outlook varchar(10),
     temperature float(5,2),
