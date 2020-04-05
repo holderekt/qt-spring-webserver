@@ -2,7 +2,7 @@ package json;
 
 /**
  *  Classe nodo principale per gli elementi
- *  di una struttura JSON. Rappresenta un nodo che puo'
+ *  di una struttura JSON. Rappresenta un nodo che può
  *  possedere una chiave.
  *
  */
