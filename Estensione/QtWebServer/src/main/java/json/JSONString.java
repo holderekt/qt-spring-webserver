@@ -12,7 +12,7 @@ public class JSONString extends JSONItem {
 
     /**
      * Costruttore a partire da una Stringa
-     * @param item
+     * @param item Stringa da rappresentare in JSON
      */
     public JSONString(String item) {
         this.item = item;

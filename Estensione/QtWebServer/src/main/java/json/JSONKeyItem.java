@@ -2,7 +2,7 @@ package json;
 
 /**
  *  Classe nodo principale per gli elementi
- *  di una struttura JSON. Rappresenta un nodo che puo
+ *  di una struttura JSON. Rappresenta un nodo che puo'
  *  possedere una chiave.
  *
  */
@@ -30,7 +30,7 @@ public abstract class JSONKeyItem extends JSONItem{
 
     /**
      * Costruttore con chiave fornita in formato Stringa
-     * @param key
+     * @param key Valore della chiave
      */
     public JSONKeyItem(String key){
         this.key = new JSONString(key);
