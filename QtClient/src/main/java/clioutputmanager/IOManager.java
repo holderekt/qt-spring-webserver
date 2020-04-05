@@ -10,7 +10,7 @@ import keyboard.Keyboard;
 public class IOManager {
 
     /**
-     * Lettura continua di un double da tastiera finche non
+     * Lettura continua di un double da tastiera finchè non
      * viene inserito un valore esatto
      * @param message Messaggio da visualizzare prima di leggere il double
      * @return Valore double letto correttamente
@@ -26,7 +26,7 @@ public class IOManager {
     }
 
     /**
-     *  Lettura continua di un double da tastiera finche non viene insertio un valore esatto
+     *  Lettura continua di un double da tastiera finchè non viene insertio un valore esatto
      *  contenuto tra un minimo e un massimo
      * @param message Messaggio da visualizzare prima di leggere il double
      * @param min Minimo valore consentito
@@ -55,7 +55,7 @@ public class IOManager {
     }
 
     /**
-     * Lettura continua di un intero da tastiera finche non
+     * Lettura continua di un intero da tastiera finchè non
      * viene inserito un valore esatto
      * @param message Messaggio da visualizzare prima di leggere l'intero
      * @return Valore intero letto correttamente
@@ -73,7 +73,7 @@ public class IOManager {
     }
 
     /**
-     *  Lettura continua di un intero da tastiera finche non viene insertio un valore esatto
+     *  Lettura continua di un intero da tastiera finchè non viene insertio un valore esatto
      *  contenuto tra un minimo e un massimo
      * @param message Messaggio da visualizzare prima di leggere l'intero
      * @param min Minimo valore consentito
