@@ -1,5 +1,8 @@
-# QT Clustering Client, Server and Webserver
-Project for the "Advanced methods of programming" exam as it was delivered to the teacher. The final grade for this project is 33/33.
-This application allows to execute the quality threshold clustering algorithm on data retrieved from a MySQL database. For more details refer to documentation (Documentation/Documentazione.pdf only in Italian)
+# Quality threshold clustering on MySQL data with Spring Boot web interface and server
+
+This application allows to execute the quality threshold clustering algorithm on data retrieved from a MySQL database. 
+- Cli clients for MySQL queries and QT clustering
+- Spring Boot Webserver
+- Custom website for data visualization and clustering requests
 
  
